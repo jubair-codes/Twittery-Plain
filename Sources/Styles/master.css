@@ -30,7 +30,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    width: 70%;
     margin: 0 auto;
 }
 
@@ -170,11 +169,6 @@ html {
     left: 7%;
 }
 
-.learn-more-btn {
-    text-decoration: none;
-    color: #E224DB;
-}
-
 .how-it-works-img-line {
     flex-grow: 1;
     height: 2px;
@@ -196,18 +190,13 @@ html {
     /* Creates rounded badge edges */
 }
 
-.steps-title {
-    font-size: 24px;
-    font-weight: 600px;
-}
-
 .steps-para {
     line-height: 29px;
     font-weight: 400px;
 }
 
 .line {
-    flex-grow: 1;
+    width: 45rem;
     height: 1px;
     opacity: 0.2;
     background-color: #fff;
@@ -243,3 +232,60 @@ html {
     opacity: 0.7;
     right: 8%;
 }
+
+.pricing-section-pos-1 {
+    position: absolute;
+    top: 4643px;
+    opacity: 0.7;
+    left: 28%;
+}
+
+.pricing-section-pos-2 {
+    position: absolute;
+    top: 4534px;
+    opacity: 0.7;
+    left: 38%;
+}
+
+.toggle-switch {
+    position: relative;
+    width: 80px;
+    height: 40px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-label::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 3.5px;
+    width: 30px;
+    height: 30px;
+    background-color: #5F1FD2;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Move the circle to the right when checked */
+.toggle-checkbox:checked+.toggle-label::before {
+    transform: translateX(42px);
+}
+
+.pricing-img {
+    height: 100px;
+    width: 100px;
+}
+
+.bg-pricing {
+    background-color: #120F22;
+}  

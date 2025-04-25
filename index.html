@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Sources/Styles/defaults.css" />
-    <link rel="stylesheet" href="Sources/Styles/master.css" />
+    <link rel="stylesheet" href="./Sources/Styles/commons.css" />
+    <link rel="stylesheet" href="./Sources/Styles/master.css" />
+    <link rel="stylesheet" href="./Sources/Styles/responsive.css">
     <title>Twittery</title>
 </head>
 
@@ -13,11 +14,11 @@
     <!-- main covers the whole body apearing to be a cover -->
     <main class="main-cover">
         <!-- The nav bar here -->
-        <nav class="navbar">
+        <nav class="navbar w-80rem">
             <div>
                 <span class="logo-text">Twittery</span>
             </div>
-            <ul class="nav-links">
+            <ul class="nav-links z-5">
                 <li>
                     <a href="#" class="nav-link">Home</a>
                 </li>
@@ -34,7 +35,7 @@
                     <a href="#" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="nav-buttons">
+            <div class="nav-buttons z-5">
                 <a href="#" class="nav-link">Login</a>
                 <a href="#" class="nav-link book-now-btn">Book now</a>
             </div>
@@ -64,7 +65,7 @@
                     sodales.</span>
             </div>
             <div class="mt-1 z-5">
-                <button class="brand-btn rounded">Get Started Now</button>
+                <button class="brand-btn rounded btn">Get Started Now</button>
             </div>
         </section>
 
@@ -92,7 +93,7 @@
                         mollis, urna ultrices metus diam volutpat duis senectus fusce
                         porttitor, odio sed arcu massa fames euismod vehicula aliquam.
                     </p>
-                    <a href="#" class="learn-more-btn">Learn More ></a>
+                    <a href="#" class="brand-link">Learn More ></a>
                 </div>
             </div>
         </section>
@@ -118,7 +119,7 @@
                         mollis, urna ultrices metus diam volutpat duis senectus fusce
                         porttitor, odio sed arcu massa fames euismod vehicula aliquam.
                     </p>
-                    <a href="#" class="learn-more-btn">Learn More ></a>
+                    <a href="#" class="brand-link">Learn More ></a>
                 </div>
                 <div class="flex z-5 col align-center">
                     <img src="./Sources/Images/section-3-img.png" alt="" style="height: max-content; width: 100%" />
@@ -126,7 +127,7 @@
             </div>
         </section>
 
-        <!-- how-it-works section here -->
+        <!-- how-it-works (steps) section here -->
         <section class="mx-auto mt-5 w-90rem overflow-visible">
             <div class="flex align-center flex-col">
                 <div>
@@ -140,7 +141,7 @@
                             <div class="badge bg-white text-black">1</div>
                         </div>
                         <div class="text-center brand-gap flex flex-col">
-                            <h4 class="steps-title">Type a Prompt</h4>
+                            <h4 class="brand-h5">Type a Prompt</h4>
                             <p class="text-para steps-para">There are many variations of passages of Lorem Ipsum
                                 available, but the majority have suffered alteration some.</p>
                         </div>
@@ -153,7 +154,7 @@
                             <div class="badge bg-white text-black">2</div>
                         </div>
                         <div class="text-center brand-gap flex flex-col">
-                            <h4 class="steps-title">Generate Twitter</h4>
+                            <h4 class="brand-h5">Generate Twitter</h4>
                             <p class="text-para steps-para">There are many variations of passages of Lorem Ipsum
                                 available, but the majority have suffered alteration some.</p>
                         </div>
@@ -166,13 +167,94 @@
                             <div class="badge bg-white text-black">3</div>
                         </div>
                         <div class="text-center brand-gap flex flex-col">
-                            <h4 class="steps-title">Export or create</h4>
+                            <h4 class="brand-h5">Export or create</h4>
                             <p class="text-para steps-para">There are many variations of passages of Lorem Ipsum
                                 available, but the majority have suffered alteration some.</p>
                         </div>
                     </div>
                 </div>
+                <!-- line between the steps -->
                 <div class="line w-60rem"></div>
+            </div>
+        </section>
+
+        <!-- video tutorial section here -->
+        <section class="w-100 pos-relative mt-5">
+            <div class="w-100">
+                <img src="./Sources/Images/tutorial-img.png" alt="" class="w-100">
+                <div class="overlay w-100 h-100 flex justify-center align-center">
+                    <div class="w-fit flex flex-col align-center brand-gap tutorial-help">
+                        <span class="brand-h5 w-fit">Watch Tutorial</span>
+                        <button class="p-4 rounded-full border bg-transperant btn w-fit z-5">
+                            <img src="./Sources/Images/resume.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- pricing section -->
+        <section class="mt-5 flex justify-center">
+            <div class="w-80rem flex justify-center">
+                <div class="flex flex-col col brand-gap p-5 justify-center">
+                    <span class="brand-link text-20">PRICING OPTIONS</span>
+                    <span class="section-heading text-bold">Our Twitter <br>Pricing Plans.</span>
+                    <span class="text-20 text-bold">Save 30% on the yearly Packages</span>
+                    <div class="flex brand-gap">
+                        <span class="steps-para">MONTHLY</span>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="toggle" class="toggle-checkbox">
+                            <label for="toggle" class="toggle-label h-100 w-100 bg-white"></label>
+                        </div>
+                        <span class="steps-para">YEARLY</span>
+                    </div>
+                </div>
+
+                <!-- pricing 1 -->
+                <div class="col bg-pricing h-fit mr-5 z-5">
+                    <div class="p-4 flex justify-center">
+                        <!-- icon -->
+                        <img src="./Sources/Images/pricing-1-img.png" alt="" class="pricing-img">
+                    </div>
+                    <hr class="w-100 gray-15prcnt">
+                    <div class="flex flex-col align-center p-4 brand-gap">
+                        <!-- about pricing -->
+                        <span class="brand-h5">Agency Plan</span>
+                        <span class="section-heading text-bold">100$</span>
+                        <span class="text-para">Unlimited accs (pay per acc)</span>
+                        <span class="text-para">Unlimited RTs</span>
+                        <span class="text-para">1 hour support</span>
+                        <span class="text-para">RT group trading network</span>
+                        <span class="text-para">Private members group</span>
+                        <span class="text-para">1-1 onboarding call</span>
+                        <span class="text-para">25x cheaper than VAs</span>
+                        <span class="text-para">Cancel anytime</span>
+                        <button class="brand-btn">START FREE 7 DAYS TRIAL</button>
+                    </div>
+                </div>
+
+                <!-- pricing 2 -->
+                <div class="col bg-pricing h-fit z-5">
+                    <div class="p-4 flex justify-center">
+                        <!-- icon -->
+                        <img src="./Sources/Images/pricing-2-img.png" alt="" class="pricing-img">
+                    </div>
+                    <hr class="w-100 gray-15prcnt">
+                    <div class="flex flex-col align-center p-4 brand-gap">
+                        <!-- about pricing -->
+                        <span class="brand-h5">Get DFY Plan</span>
+                        <span class="section-heading text-bold">300$</span>
+                        <span class="text-para">Unlimited accs (pay per acc)</span>
+                        <span class="text-para">Unlimited RTs</span>
+                        <span class="text-para">1 hour support</span>
+                        <span class="text-para">Unlimited free RT groups</span>
+                        <span class="text-para">RT group trading network</span>
+                        <span class="text-para">Private members group</span>
+                        <span class="text-para">1-1 onboarding call</span>
+                        <span class="text-para">25x cheaper than VAs</span>
+                        <button class="brand-btn">SHOW MORE</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -189,6 +271,10 @@
     <!-- steps section eclipse -->
     <div class="blur-eclipse-small steps-section-pos-1 eclipse-blue"></div>
     <div class="blur-eclipse-small steps-section-pos-1 eclipse-pink"></div>
+    <!-- pricing section eclipse -->
+    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-blue"></div>
+    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-pink"></div>
+    <script src="./Sources/Scripts/main.js"></script>
 </body>
 
 </html>

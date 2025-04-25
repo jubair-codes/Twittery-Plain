@@ -1,0 +1,11 @@
+@media screen and (max-width: 1400px) {
+    .w-80rem {
+      width: 70rem;
+    }
+    .w-90rem {
+        width: 80rem;
+    }
+    .line {
+        top: 180rem;
+    }
+  }

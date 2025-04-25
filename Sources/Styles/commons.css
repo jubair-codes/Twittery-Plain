@@ -6,6 +6,15 @@
     border: 0;
 }
 
+.text-bold {
+    font-weight: bolder;
+}
+
+.brand-link {
+    color: #E224DB;
+    text-decoration: none;
+}
+
 .section-heading {
     font-size: 48px;
     font-weight: 700px;
@@ -109,6 +118,19 @@
     justify-content: center;
 }
 
+.bg-transperant {
+    background: transparent;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+
 .align-center {
     align-items: center;
 }
@@ -163,6 +185,10 @@
 
 .w-80rem {
     width: 80rem;
+}
+
+.w-90rem {
+    width: 90rem;
 }
 
 .w-85prcnt {
@@ -259,6 +285,39 @@
     height: 100vh;
 }
 
+.h-100 {
+    height: 100%;
+}
+
+.brand-h5 {
+    font-size: 24px;
+    font-weight: 600px;
+}
+
+.h-fit {
+    height: fit-content;
+}
+
+.mr-5 {
+    margin-right: 3rem;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+.gray-15prcnt {
+    color: gray;
+    opacity: 0.15;
+}
+
+.overlay {
+    background-color: #030014;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
 .gap-2 {
     gap: 1.5rem;
 }
@@ -269,6 +328,8 @@
 
 .text-para {
     color: #9CA3AF;
+    font-size: 16px;
+    font-weight: 400px;
 }
 
 .z-7 {
