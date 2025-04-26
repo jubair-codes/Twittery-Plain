@@ -45,6 +45,10 @@
     gap: 30px;
 }
 
+.line-h-40prcnt {
+    line-height: 40%;
+}
+
 .link {
     text-decoration: none;
     color: #000;

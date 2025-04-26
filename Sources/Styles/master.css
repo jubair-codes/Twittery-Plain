@@ -157,7 +157,7 @@ html {
 
 .s2-eclipse-pos-1 {
     position: absolute;
-    top: 1158px;
+    top: 1170px;
     opacity: 0.7;
     left: 7%;
 }
@@ -177,17 +177,12 @@ html {
 
 .badge {
     position: absolute;
-    /* Allows placement over the image */
     top: 0px;
-    /* Distance from the top of the image */
     left: 0px;
-    /* Distance from the right side of the image */
     padding: 5px 13px;
-    /* Adjusts badge size */
     font-size: 20px;
     font-weight: 700px;
     border-radius: 50%;
-    /* Creates rounded badge edges */
 }
 
 .steps-para {
@@ -289,3 +284,10 @@ html {
 .bg-pricing {
     background-color: #120F22;
 }  
+
+.testimonial-card {
+    background-color: #FFFFFF0F;
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    width: 515px;
+}
