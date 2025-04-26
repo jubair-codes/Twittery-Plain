@@ -285,9 +285,66 @@ html {
     background-color: #120F22;
 }  
 
+.testimonial-container-1 {
+    transform: translateX(-120px);
+}
+
+.testimonial-container-2 {
+    transform: translateX(-20px);
+}
+
+
 .testimonial-card {
     background-color: #FFFFFF0F;
     backdrop-filter: blur(12px);
     border-radius: 15px;
     width: 515px;
+}
+
+.faq-item {
+    border-radius: 10px;
+    border: 1px solid #ffffff1f;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5950890D;
+    backdrop-filter: blur(12px);
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 2.5rem;
+}
+
+.faq-item:hover {
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 16px;
+    color: #9CA3AF;
+    padding: 1.5rem;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg); /* Flips the arrow when active */
+}
+
+.join-section {
+    background-color: #07031C;
 }
