@@ -1,9 +1,9 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
     .w-80rem {
       width: 70rem;
     }
     .w-90rem {
-        width: 80rem;
+        width: 70rem;
     }
     .line {
         top: 37.5%;
