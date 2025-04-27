@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    overflow: visible;
 }
 
 body {
@@ -48,7 +49,7 @@ html {
     font-size: var(--primary-text-size);
     font-weight: 400;
     list-style: none;
-    gap: 24px;
+    gap: 60px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 15px 25px;
     border-radius: 50px;
@@ -56,13 +57,28 @@ html {
 
 .nav-link {
     text-decoration: none;
+    color: #fff;
 }
+
+.nav-link:hover {
+    color: #E224DB;
+}
+
+.nav-link:active {
+    color: #E224DB;
+}
+
 
 .nav-buttons {
     display: flex;
     align-items: center;
     gap: 14px;
 }
+
+.nav-buttons:hover {
+    color: #E224DB;
+}
+
 
 .book-now-btn {
     font-size: var(--primary-text-size);
@@ -82,10 +98,8 @@ html {
     /* Dark gradient */
     display: flex;
     z-index: 5;
-    justify-content: center;
     align-items: center;
-    margin: 0;
-    height: 850px;
+    height: 800px;
 }
 
 
@@ -114,25 +128,20 @@ html {
 
 .blur-eclipse-big {
     width: 903px;
-    /* Adjust size for your preference */
     height: 903px;
     border-radius: 50%;
     opacity: 0.4;
     z-index: 2;
-    /* Semi-transparent pink */
     filter: blur(7000px);
-    /* Add blur effect */
 }
 
 .blur-eclipse-small {
     width: 178px;
     height: 178px;
     border-radius: 50%;
-    opacity: 0.4;
+    opacity: 1;
     z-index: 2;
-    /* Semi-transparent pink */
     filter: blur(700px);
-    /* Add blur effect */
 }
 
 .eclipse-blue {
@@ -145,28 +154,26 @@ html {
 
 .hero-eclipse-pos-1 {
     position: absolute;
-    top: -85px;
-    left: 7%;
+    top: -185px;
+    left: -60px;
 }
 
 .hero-eclipse-pos-2 {
     position: absolute;
-    top: -120px;
-    right: 7%;
+    top: -180px;
+    right: -60px;
 }
 
 .s2-eclipse-pos-1 {
     position: absolute;
-    top: 1170px;
-    opacity: 0.7;
-    left: 7%;
+    top: 100px;
+    left: -110px;
 }
 
 .s2-eclipse-pos-2 {
     position: absolute;
-    top: 1138px;
-    opacity: 0.7;
-    left: 7%;
+    top: -70px;
+    left: -150px;
 }
 
 .how-it-works-img-line {
@@ -193,53 +200,54 @@ html {
 .line {
     width: 45rem;
     height: 1px;
-    opacity: 0.2;
+    opacity: 0.5;
     background-color: #fff;
-    top: 176rem;
+    top: 37.5%;
     z-index: 1;
     position: absolute;
 }
 
 .s3-section-pos-1 {
     position: absolute;
-    top: 1809px;
-    opacity: 0.7;
+    top: 50px;
+    opacity: 1;
     left: 40%;
 }
 
 .s3-section-pos-2 {
     position: absolute;
-    top: 1809px;
-    opacity: 0.7;
-    left: 45%;
+    top: -50px;
+    opacity: 1;
+    left: 35%;
 }
 
 .steps-section-pos-1 {
     position: absolute;
-    top: 2574px;
-    opacity: 0.7;
-    right: 12%;
+    top: 160px;
+    opacity: 1;
+    right: 0;
 }
 
 .steps-section-pos-2 {
     position: absolute;
-    top: 2574px;
-    opacity: 0.7;
-    right: 8%;
+    top: -360px;
+    opacity: 1;
+    right: 200px;
 }
 
 .pricing-section-pos-1 {
     position: absolute;
-    top: 4643px;
-    opacity: 0.7;
-    left: 28%;
+    bottom: 20%;
+    opacity: 1;
+    left: 20%;
 }
 
 .pricing-section-pos-2 {
     position: absolute;
-    top: 4534px;
-    opacity: 0.7;
-    left: 38%;
+    background-color: #E224DB;
+    top: 500px;
+    opacity: 1.5;
+    left: 30px;
 }
 
 .toggle-switch {
@@ -271,7 +279,6 @@ html {
     transition: transform 0.3s;
 }
 
-/* Move the circle to the right when checked */
 .toggle-checkbox:checked+.toggle-label::before {
     transform: translateX(42px);
 }
@@ -283,7 +290,7 @@ html {
 
 .bg-pricing {
     background-color: #120F22;
-}  
+}
 
 .testimonial-container-1 {
     transform: translateX(-120px);
@@ -301,9 +308,13 @@ html {
     width: 515px;
 }
 
+.testimonial-card:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
 .faq-item {
     border-radius: 10px;
-    border: 1px solid #ffffff1f;
     cursor: pointer;
 }
 
@@ -315,12 +326,7 @@ html {
     align-items: center;
     font-size: 24px;
     font-weight: 600;
-    padding: 2.5rem;
-}
-
-.faq-item:hover {
-    transform: scale(1.01);
-    transition: 0.3s ease-in-out;
+    padding: 2rem;
 }
 
 .arrow {
@@ -341,10 +347,84 @@ html {
     display: block;
 }
 
+.faq-item.active .faq-question{
+    background: transparent;
+}
+
+.faq-item.active {
+    border: 1px solid hsl(0, 0%, 10%);
+}
+
 .faq-item.active .arrow {
-    transform: rotate(180deg); /* Flips the arrow when active */
+    transform: rotate(180deg);
+}
+
+.faq-sction-pos-1 {
+    position: absolute;
+    bottom: -10%;
+    z-index: 1;
+    opacity: 1;
+    left: 20%;
+}
+
+.faq-section-pos-2 {
+    position: absolute;
+    bottom: -5%;
+    z-index: 1;
+    opacity: 1;
+    left: -200px;
 }
 
 .join-section {
+    position: relative;
+    margin-top: -150px;
+    z-index: 10;
+}
+
+.bg-footer-area {
     background-color: #07031C;
+}
+
+.footer-btn {
+    width: 50px;
+    height: 50px;
+    background-color: #5950894D;
+    border: 0;
+    border-radius: 10px;
+}
+
+.footer-gap {
+    gap: 95px;
+}
+
+.footer-link {
+    list-style: none;
+}
+
+.footer-input {
+    width: 325;
+    height: 55;
+    top: 7518px;
+    left: 1281px;
+    border-radius: 3px;
+    border-width: 1px;
+    background: transparent;
+    border: 0.2px solid #FFFFFF33;
+}
+
+.footer-send-btn {
+    position: absolute;
+    top: 152px;
+    right: 3px;
+    border: 0;
+    background-color: #EA00F5;
+    width: 72px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.footer-2 {
+    padding-top: 30px;
+    margin-top: 70px;
+    border-top: 0.2px solid #FFFFFF1A;
 }

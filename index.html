@@ -14,9 +14,9 @@
     <!-- main covers the whole body apearing to be a cover -->
     <main class="main-cover">
         <!-- The nav bar here -->
-        <nav class="navbar w-80rem">
+        <nav class="navbar w-90rem">
             <div>
-                <span class="logo-text">Twittery</span>
+                <a class="logo-text" href="#">Twittery</a>
             </div>
             <ul class="nav-links z-5">
                 <li>
@@ -26,10 +26,10 @@
                     <a href="#" class="nav-link">Company</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="#pricing-section" class="nav-link">Pricing</a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link">FAQ</a>
+                    <a href="#faq-section" class="nav-link">FAQ</a>
                 </li>
                 <li>
                     <a href="#" class="nav-link">Contact</a>
@@ -41,7 +41,7 @@
             </div>
         </nav>
         <!-- hero section -->
-        <section class="hero-section gap-1 pos-relative">
+        <section class="hero-section gap-1 pos-relative w-90rem mx-auto">
             <div class="flex notifier align-center">
                 <div class="rounded flex align-center notify-badge">New</div>
                 <div class="flex gap-1">
@@ -67,12 +67,15 @@
             <div class="mt-1 z-5">
                 <button class="brand-btn rounded btn">Get Started Now</button>
             </div>
+            <!-- blur eclipses -->
+            <div class="blur-eclipse-big hero-eclipse-pos-1 eclipse-blue"></div>
+            <div class="blur-eclipse-big hero-eclipse-pos-2 eclipse-pink"></div>
         </section>
 
         <!-- Second section here -->
-        <section class="mt-5 pos-relative">
-            <div class="flex w-80rem mx-auto">
-                <div class="flex z-5 col align-center">
+        <section class="mt-5 pos-relative w-80rem mx-auto">
+            <div class="flex w-100">
+                <div class="flex z-5 col">
                     <img src="./Sources/Images/section-2-img.png" alt="" style="height: max-content; width: 100%" />
                 </div>
                 <div class="flex pl-5 flex-col brand-gap col">
@@ -96,11 +99,14 @@
                     <a href="#" class="brand-link">Learn More ></a>
                 </div>
             </div>
+    <!-- reports-1 section eclipse -->
+    <div class="blur-eclipse-small s2-eclipse-pos-1 eclipse-blue"></div>
+    <div class="blur-eclipse-small s2-eclipse-pos-2 eclipse-pink"></div>
         </section>
 
         <!-- third section here -->
-        <section class="mt-5 pos-relative">
-            <div class="flex w-80rem mx-auto">
+        <section class="mt-5 pos-relative w-80rem mx-auto">
+            <div class="flex w-100">
                 <div class="flex pr-5 flex-col brand-gap col z-5">
                     <h1 class="section-heading">
                         Fine-tuned by agency owners We understand how to get results for
@@ -121,10 +127,13 @@
                     </p>
                     <a href="#" class="brand-link">Learn More ></a>
                 </div>
-                <div class="flex z-5 col align-center">
+                <div class="flex z-5 col">
                     <img src="./Sources/Images/section-3-img.png" alt="" style="height: max-content; width: 100%" />
                 </div>
             </div>
+    <!-- reports-2 section eclipse -->
+    <div class="blur-eclipse-small s3-section-pos-1 eclipse-blue"></div>
+    <div class="blur-eclipse-small s3-section-pos-2 eclipse-pink"></div>
         </section>
 
         <!-- how-it-works (steps) section here -->
@@ -176,6 +185,10 @@
                 <!-- line between the steps -->
                 <div class="line w-60rem"></div>
             </div>
+
+    <!-- steps section eclipse -->
+    <div class="blur-eclipse-small steps-section-pos-1 eclipse-blue"></div>
+    <div class="blur-eclipse-small steps-section-pos-1 eclipse-pink"></div>
         </section>
 
         <!-- video tutorial section here -->
@@ -194,8 +207,8 @@
         </section>
 
         <!-- pricing section -->
-        <section class="mt-5 flex justify-center pos-relative">
-            <div class="w-80rem flex justify-center">
+        <section class="mt-5 flex justify-center pos-relative w-80rem mx-auto" id="pricing-section">
+            <div class="flex justify-center w-100">
                 <div class="flex flex-col col brand-gap p-5 justify-center">
                     <span class="brand-link text-20">PRICING OPTIONS</span>
                     <span class="section-heading text-bold">Our Twitter <br>Pricing Plans.</span>
@@ -217,7 +230,7 @@
                         <img src="./Sources/Images/pricing-1-img.png" alt="" class="pricing-img">
                     </div>
                     <hr class="w-100 gray-15prcnt">
-                    <div class="flex flex-col align-center p-4 brand-gap">
+                    <div class="flex flex-col align-center p-3 brand-gap">
                         <!-- about pricing -->
                         <span class="brand-h5">Agency Plan</span>
                         <span class="section-heading text-bold">100$</span>
@@ -229,7 +242,7 @@
                         <span class="text-para">1-1 onboarding call</span>
                         <span class="text-para">25x cheaper than VAs</span>
                         <span class="text-para">Cancel anytime</span>
-                        <button class="brand-btn">START FREE 7 DAYS TRIAL</button>
+                        <button class="brand-btn btn">START FREE 7 DAYS TRIAL</button>
                     </div>
                 </div>
 
@@ -240,7 +253,7 @@
                         <img src="./Sources/Images/pricing-2-img.png" alt="" class="pricing-img">
                     </div>
                     <hr class="w-100 gray-15prcnt">
-                    <div class="flex flex-col align-center p-4 brand-gap">
+                    <div class="flex flex-col align-center p-3 brand-gap">
                         <!-- about pricing -->
                         <span class="brand-h5">Get DFY Plan</span>
                         <span class="section-heading text-bold">300$</span>
@@ -252,10 +265,14 @@
                         <span class="text-para">Private members group</span>
                         <span class="text-para">1-1 onboarding call</span>
                         <span class="text-para">25x cheaper than VAs</span>
-                        <button class="brand-btn">SHOW MORE</button>
+                        <button class="brand-btn btn">SHOW MORE</button>
                     </div>
                 </div>
             </div>
+
+    <!-- pricing section eclipse -->
+    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-blue"></div>
+    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-pink"></div>
         </section>
 
 
@@ -363,15 +380,11 @@
         </section>
 
         <!-- FAQ section -->
-        <section class="w-70rem mx-auto mt-5">
+        <section class="w-70rem mx-auto mt-5 h-fit pos-relative" id="faq-section">
             <div class="text-center w-100 p-5">
                 <span class="section-heading text-bold">Frequently Asked Questions</span>
             </div>
             <div class="flex flex-col brand-gap w-100">
-
-
-                <!-- temp -->
-
                 <div class="faq-container w-100 flex flex-col brand-gap">
                     <div class="faq-item">
                         <div class="faq-question p-3 text-24px text-white text-bold">
@@ -380,8 +393,7 @@
                                 <img src="./Sources/Images/FAQ-drop-img.png" alt="">
                             </span>
                         </div>
-                        <div class="faq-answer p-3">
-                            No matter if you're a marketer, designer, or creative individual, you can quickly transform your creative concepts into tangible designs without investing time in designing from scratch.
+                        <div class="faq-answer p-3">No matter if you're a marketer, designer, or creative individual, you can quickly transform your creative concepts into tangible designs without investing time in designing from the ground up. With AI-generated images from text, you can effortlessly enhance your designs at no cost and in a matter of minutes.
                         </div>
                     </div>
                     <div class="faq-item">
@@ -391,8 +403,7 @@
                                 <img src="./Sources/Images/FAQ-drop-img.png" alt="">
                             </span>
                         </div>
-                        <div class="faq-answer">
-                            Tweet Riser is a tool designed to help you enhance your Twitter presence by automating and optimizing your tweets.
+                        <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi sunt laudantium dicta et? Eum, corrupti praesentium! Molestiae iure dolorum totam architecto? Perspiciatis, soluta nam. Quidem molestiae incidunt veritatis eum.
                         </div>
                     </div>
                     <div class="faq-item">
@@ -402,8 +413,7 @@
                                 <img src="./Sources/Images/FAQ-drop-img.png" alt="">
                             </span>
                         </div>
-                        <div class="faq-answer">
-                            Yes, Tweet Riser can help you build an audience and grow your account by providing insights and automating your tweet schedule.
+                        <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laudantium error praesentium, fugit id sequi aliquid modi, nobis ducimus voluptatum, asperiores dolores. Eaque fugiat reprehenderit autem voluptas officiis.
                         </div>
                     </div>
                     <div class="faq-item">
@@ -413,8 +423,7 @@
                                 <img src="./Sources/Images/FAQ-drop-img.png" alt="">
                             </span>
                         </div>
-                        <div class="faq-answer">
-                            Yes, you can customize the messages sent by Tweet Riser to match your brand's voice and style.
+                        <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus minima enim omnis est impedit veniam temporibus eius delectus deserunt ducimus nam quasi quia, ipsum, magni porro quod commodi?
                         </div>
                     </div>
                     <div class="faq-item">
@@ -424,45 +433,108 @@
                                 <img src="./Sources/Images/FAQ-drop-img.png" alt="">
                             </span>
                         </div>
-                        <div class="faq-answer">
-                            You can integrate Tweet Riser with Twitter / X by following the integration steps provided in the Tweet Riser dashboard.
+                        <div class="faq-answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, ea labore similique minus quod molestias dolorem sapiente fugit, inventore necessitatibus aperiam incidunt doloribus accusantium harum sit.
                         </div>
                     </div>
                 </div>
             </div>
+
+
+    <!-- FAQ section eclipse -->
+    <div class="blur-eclipse-small faq-section-pos-1 eclipse-blue"></div>
+    <div class="blur-eclipse-small faq-section-pos-2 eclipse-pink"></div>
         </section>
 
         <!-- join community section here -->
         <section class="w-100 mt-5">
-            <div class="flex flex-col align-center brand-gap p-5 join-section">
+            <div class="flex flex-col align-center brand-gap p-5 join-section bg-footer-area">
                 <div class=" flex brand-gap">
                    <img src="./Sources/Images/celebrate.png" alt="">
                     <h1 class="section-heading text-bold">Join Our Community</h1>
                 </div>
                 <span class="text-24px" style="color: #86909D;">Lorem ipsum dolor sit amet consectetur adipisicing elit Quis non fugit</span>
-                <button class="brand-btn flex gap-1 flex-row rounded">
+                <button class="brand-btn flex gap-1 flex-row rounded btn">
                     <span class="text-para text-white">JOIN DISCORD</span>
                     <img src="./Sources/Images/Discord.png" alt="">
                 </button>
             </div>
         </section>
-    </main>
 
-    <!-- First section eclipse -->
-    <div class="blur-eclipse-big hero-eclipse-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-big hero-eclipse-pos-2 eclipse-pink"></div>
-    <!-- reports-1 section eclipse -->
-    <div class="blur-eclipse-small s2-eclipse-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small s2-eclipse-pos-2 eclipse-pink"></div>
-    <!-- reports-2 section eclipse -->
-    <div class="blur-eclipse-small s3-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small s3-section-pos-2 eclipse-pink"></div>
-    <!-- steps section eclipse -->
-    <div class="blur-eclipse-small steps-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small steps-section-pos-1 eclipse-pink"></div>
-    <!-- pricing section eclipse -->
-    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-pink"></div>
+        <!-- footer -->
+        <footer class="w-100 flex flex-col p-5 bg-footer-area border-t">
+            <div class="flex w-80rem mx-auto footer-gap">
+                <!-- 1st footer -->
+                <div class="col flex flex-col brand-gap">
+                    <h1 class="logo-text">Twittery</h1>
+                    <p class="text-para">
+                        There are many variations of passages of Lorem Ipsum available but  majority have suffered 
+alteration in some form by injected.
+                    </p>
+                    <div class="flex align-center gap-1">
+                        <button class="footer-btn btn">
+                            <img src="./Sources/Images/twitter.png" alt="">
+                        </button>
+                        <button class="footer-btn btn">
+                            <img src="./Sources/Images/Vector.png" alt="">
+                        </button>
+                        <button class="footer-btn btn">
+                            <img src="./Sources/Images/Discord-link.png" alt="">
+                        </button>
+                        <button class="footer-btn btn">
+                            <img src="./Sources/Images/tiktok.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="col flex footer-gap">
+                    <!-- all links -->
+                     <div class="col flex flex-col brand-gap">
+                        <span class="brand-h5 text-bold">Company</span>
+                        <ul class="flex flex-col gap-2 footer-link">
+                            <li><a href="#" class="text-para link">Jobs</a></li>
+                            <li><a href="#" class="text-para link">Privacy</a></li>
+                            <li><a href="#" class="text-para link">Terms</a></li>
+                            <li><a href="#" class="text-para link">Cookies</a></li>
+                            <li><a href="#" class="text-para link">Contact Support</a></li>
+                        </ul>
+                     </div>
+                     <div class="col flex flex-col brand-gap">
+                        <span class="brand-h5 text-bold">Create</span>
+                        <ul class="flex flex-col gap-2 footer-link">
+                            <li><a href="#" class="text-para link">Social Post</a></li>
+                            <li><a href="#" class="text-para link">Mockup make</a></li>
+                            <li><a href="#" class="text-para link">Animation Gif</a></li>
+                            <li><a href="#" class="text-para link">Photo Lyric</a></li>
+                            <li><a href="#" class="text-para link">Cartoon</a></li>
+                        </ul>
+                     </div>
+                </div>
+                <div class="col flex flex-col brand-gap pos-relative">
+                    <span class="brand-h5 text-bold">Join Newslatter</span>
+                    <p class="text-para">signup for our newsletter to get the latest News in your inbox.</p>
+                    <input type="text" class="p-2 rounded-sm footer-input" placeholder="Email Address">
+                    <button class="btn footer-send-btn">
+                        <img src="./Sources/Images/send.png" alt="">
+                    </button>
+                 </div>
+            </div>
+            <div class="w-80rem mx-auto mt-1 flex footer-2">
+                <!-- 2nd footer here -->
+                <div class="col flex gap-5">
+                    <span class="text-para">
+                        Copyright - All Rights Reserved.
+                    </span>
+                    <div class="flex gap-2">
+                        <a href="#" class="text-para link">Terms</a>
+                        <a href="#" class="text-para link">Privacy</a>
+                    </div>
+                </div>
+                <div class="col justify-end flex">
+                    <span class="text-para">Made with  By Twittery</span>
+                </div>
+            </div>
+
+        </footer>
+    </main>
     <script src="./Sources/Scripts/main.js"></script>
 </body>
 

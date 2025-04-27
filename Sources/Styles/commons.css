@@ -1,5 +1,6 @@
 .brand-btn {
-    padding: 24px 31px;
+    margin: 20px;
+    padding: 20px 31px;
     font-size: 16px;
     font-weight: 600;
     background: var(--primary-gradient);
@@ -8,6 +9,22 @@
 
 .text-bold {
     font-weight: bolder;
+}
+
+hr {
+    border: 0.2px solid white;
+}
+
+.border-t {
+    border-top: 0.2px solid #FFFFFF1A;
+}
+
+.gap-5 {
+    gap: 150px;
+}
+
+.mt-3 {
+    margin-top: 70px;
 }
 
 .brand-link {
@@ -140,6 +157,10 @@
 
 .bg-transperant {
     background: transparent;
+}
+
+.gap-2 {
+    gap: 48px;
 }
 
 .btn:hover {
@@ -346,9 +367,18 @@
     flex: 1;
 }
 
+.rounded-sm {
+    border-radius: 15px;
+}
+
+.bg-pink {
+    background-color: #E224DB!important;
+}
+
 .text-para {
     color: #9CA3AF;
     font-size: 16px;
+    line-height: 29px;
     font-weight: 400px;
 }
 
