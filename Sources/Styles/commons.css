@@ -1,14 +1,53 @@
 .brand-btn {
     margin: 20px;
-    padding: 20px 31px;
+    padding: 15px 31px;
     font-size: 16px;
     font-weight: 600;
     background: var(--primary-gradient);
     border: 0;
+    width: 200;
+}
+
+.brand-btn-2 {
+    margin: 20px;
+    padding: 15px 31px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(90deg, #E224DB, #243FE2);
+    border: 0;
+    width: 200;
+}
+
+.bg-global {
+    background-color: #030014;
+}
+
+.reports-gap {
+    gap: 108px;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-05 {
+    padding: 0.1rem;
+}
+
+.brand-btn-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
 }
 
 .text-bold {
     font-weight: bolder;
+}
+
+.font-open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
 }
 
 hr {
@@ -39,7 +78,7 @@ hr {
 }
 
 .border {
-    border: 0.2px solid gray;
+    border: 0.2px solid #231E37;
 }
 
 .justify-between {
@@ -59,7 +98,15 @@ hr {
 }
 
 .flex-row {
-    flex-direction: row;
+    flex-direction: row!important;
+}
+
+.w-50prcnt {
+    width: 50%;
+}
+
+.w-55prcnt {
+    width: 55%;
 }
 
 .w-100vw {
@@ -181,7 +228,7 @@ hr {
 }
 
 .text-white {
-    color: white!important;
+    color: white !important;
 }
 
 .text-black {
@@ -216,6 +263,34 @@ hr {
     width: 60rem;
 }
 
+.font-roboto {
+    font-family: "Roboto";
+}
+
+.font-outfit {
+    font-family: "Outfit";
+}
+
+.py-7 {
+    padding: 7px 0;
+}
+
+.py-25 {
+    padding: 25px 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.font-epilogue {
+    font-family: "Epilogue";
+}
+
+.text-600 {
+    font-weight: 600px;
+}
+
 .w-70rem {
     width: 70rem;
 }
@@ -226,6 +301,10 @@ hr {
 
 .w-80rem {
     width: 80rem;
+}
+
+.w-85rem {
+    width: 85rem;
 }
 
 .w-90rem {
@@ -298,7 +377,7 @@ hr {
 }
 
 .pr-5 {
-    padding: 0 4rem 0 0;
+    padding: 0 9rem 0 0;
 }
 
 .gap-1 {
@@ -331,8 +410,19 @@ hr {
 }
 
 .brand-h5 {
+    font-weight: 600;
     font-size: 24px;
-    font-weight: 600px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.border-brand {
+    border: 0.2px solid white;
+}
+
+.opacity-04 {
+    opacity: 0.4;
 }
 
 .h-fit {
@@ -340,7 +430,7 @@ hr {
 }
 
 .mr-5 {
-    margin-right: 3rem;
+    margin-right: 30px;
 }
 
 .text-20 {
@@ -348,8 +438,8 @@ hr {
 }
 
 .gray-15prcnt {
-    color: gray;
-    opacity: 0.15;
+    color: #FFFFFF;
+    opacity: 0.1;
 }
 
 .overlay {
@@ -372,7 +462,7 @@ hr {
 }
 
 .bg-pink {
-    background-color: #E224DB!important;
+    background-color: #E224DB !important;
 }
 
 .text-para {

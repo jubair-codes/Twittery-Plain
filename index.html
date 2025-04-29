@@ -1,541 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Sources/Styles/commons.css" />
     <link rel="stylesheet" href="./Sources/Styles/master.css" />
-    <link rel="stylesheet" href="./Sources/Styles/responsive.css">
+    <link rel="stylesheet" href="./Sources/Styles/responsive.css" />
     <title>Twittery</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- main covers the whole body apearing to be a cover -->
-    <main class="main-cover">
-        <!-- The nav bar here -->
-        <nav class="navbar w-90rem">
-            <div>
-                <a class="logo-text" href="#">Twittery</a>
-            </div>
-            <ul class="nav-links z-5">
-                <li>
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Company</a>
-                </li>
-                <li>
-                    <a href="#pricing-section" class="nav-link">Pricing</a>
-                </li>
-                <li>
-                    <a href="#faq-section" class="nav-link">FAQ</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-buttons z-5">
-                <a href="#" class="nav-link">Login</a>
-                <a href="#" class="nav-link book-now-btn">Book now</a>
-            </div>
-        </nav>
-        <!-- hero section -->
-        <section class="hero-section gap-1 pos-relative w-90rem mx-auto">
-            <div class="flex notifier align-center">
-                <div class="rounded flex align-center notify-badge">New</div>
-                <div class="flex gap-1">
-                    <span class="notifier-text">5 DAY FREE TRIAL TO GET YOUR FIRST 50 ONLY FANS SUBS FROM</span>
-                    <img src="./Sources/Images/x.png" alt="" class="tiny-icon" />
-                </div>
-            </div>
-            <div class="flex flex-col align-center">
-                <h1 class="hero-title">
-                    Maximum
-                    <img src="./Sources/Images/x.png" alt="" class="" />
-                    Traffic, Earn
-                </h1>
-                <h1 class="hero-title">Maximum Cashflow.</h1>
-            </div>
-            <div class="flex z-5">
-                <span class="text-center brand-text-secondary">Lorem ipsum dolor sit amet consectetur adipiscing elit
-                    faucibus,
-                    pretium feugiat morbi id <br />
-                    nisi ligula urna, condimentum ante mollis interdum vulputate odio
-                    sodales.</span>
-            </div>
-            <div class="mt-1 z-5">
-                <button class="brand-btn rounded btn">Get Started Now</button>
-            </div>
-            <!-- blur eclipses -->
-            <div class="blur-eclipse-big hero-eclipse-pos-1 eclipse-blue"></div>
-            <div class="blur-eclipse-big hero-eclipse-pos-2 eclipse-pink"></div>
-        </section>
+    <main class="main-cover pos-relative">
+      <!-- The nav bar here -->
+      <nav class="navbar w-90rem pos-absolute overflow-hide">
+        <div>
+          <a class="logo-text btn" href="#">Twittery</a>
+        </div>
+        <ul class="nav-links z-5 pos-relative overflow-hide">
+          <li>
+            <a href="#" class="nav-link pos-relative z-7">Home</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Company</a>
+          </li>
+          <li>
+            <a href="#pricing-section" class="nav-link">Pricing</a>
+          </li>
+          <li>
+            <a href="#faq-section" class="nav-link">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-buttons z-5">
+          <a href="#" class="nav-link">Login</a>
+          <button href="#" class="nav-link p-05 brand-btn rounded">
+            <div class="h-100 w-100 rounded bg-global book-now-btn">Book now</div>
+          </button>
+        </div>
+      </nav>
+      <!-- hero section -->
+      <section class="hero-section gap-1 pos-relative w-90rem mx-auto">
+        <div class="flex notifier align-center flex-row justify-center">
+          <div class="rounded flex align-center notify-badge">New</div>
+          <div class="flex gap-1">
+            <span class="notifier-text"
+              >5 DAY FREE TRIAL TO GET YOUR FIRST 50 ONLY FANS SUBS FROM</span
+            >
+            <img src="./Sources/Images/x.png" alt="" class="tiny-icon" />
+          </div>
+        </div>
+        <div class="flex flex-col align-center">
+          <h1 class="hero-title">
+            Maximum
+            <img src="./Sources/Images/x.png" alt="" class="" />
+            Traffic, Earn <br />
+            Maximum Cashflow.
+          </h1>
+        </div>
+        <div class="flex z-5">
+          <span class="text-center brand-text-secondary font-open-sans"
+            >Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus,
+            pretium feugiat morbi id <br />
+            nisi ligula urna, condimentum ante mollis interdum vulputate odio
+            sodales.</span
+          >
+        </div>
+        <div class="mt-1 z-5">
+          <button class="brand-btn rounded btn">
+            <span class="brand-btn-text"> Get Started Now </span>
+          </button>
+        </div>
+        <!-- blur eclipses -->
+        <div class="blur-eclipse-big hero-eclipse-pos-1 eclipse-blue"></div>
+        <div class="blur-eclipse-big hero-eclipse-pos-2 eclipse-pink"></div>
+      </section>
 
-        <!-- Second section here -->
-        <section class="mt-5 pos-relative w-90rem mx-auto">
-            <div class="flex w-100">
-                <div class="flex z-5 col">
-                    <img src="./Sources/Images/section-2-img.png" alt="" style="height: max-content; width: 100%" />
-                </div>
-                <div class="flex pl-5 flex-col brand-gap col">
-                    <h1 class="section-heading">
-                        Fine-tuned by agency owners We understand how to get results for
-                        your models
-                    </h1>
-                    <p class="text-para">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
-                        mollis, urna ultrices metus diam volutpat duis senectus fusce
-                        porttitor, odio sed arcu massa fames euismod vehicula aliquam.
-                        Lobortis massa hac inceptos volutpat iaculis porttitor vel potenti
-                        in dictum tempor, eleifend torquent mi ut at curabitur aenean quam
-                        nunc fames.
-                    </p>
-                    <p class="text-para">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
-                        mollis, urna ultrices metus diam volutpat duis senectus fusce
-                        porttitor, odio sed arcu massa fames euismod vehicula aliquam.
-                    </p>
-                    <a href="#" class="brand-link">Learn More ></a>
-                </div>
-            </div>
-    <!-- reports-1 section eclipse -->
-    <div class="blur-eclipse-small s2-eclipse-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small s2-eclipse-pos-2 eclipse-pink"></div>
-        </section>
+      <!-- Second section here -->
+      <section class="mt-5 pos-relative w-90rem mx-auto">
+        <div class="flex w-100 reports-gap">
+          <div class="flex z-5 col justify-center">
+            <img
+              src="./Sources/Images/section-2-img.png"
+              alt=""
+              class="reports-section-img"
+            />
+          </div>
+          <div class="flex  flex-col brand-gap col">
+            <h2 class="section-heading">
+              Fine-tuned by agency owners We understand how to get results for
+              your models
+            </h2>
+            <p class="text-para font-open-sans pr-5">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
+              mollis, urna ultrices metus diam volutpat duis senectus fusce
+              porttitor, odio sed arcu massa fames euismod vehicula aliquam.
+              Lobortis massa hac inceptos volutpat iaculis porttitor vel potenti
+              in dictum tempor, eleifend torquent mi ut at curabitur aenean quam
+              nunc fames.
+            </p>
+            <p class="text-para font-open-sans pr-5">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
+              mollis, urna ultrices metus diam volutpat duis senectus fusce
+              porttitor, odio sed arcu massa fames euismod vehicula aliquam.
+            </p>
+            <a href="#" class="brand-link">Learn More ></a>
+          </div>
+        </div>
+        <!-- reports-1 section eclipse -->
+        <div class="blur-eclipse-small s2-eclipse-pos-1 eclipse-blue"></div>
+        <div class="blur-eclipse-small s2-eclipse-pos-2 eclipse-pink"></div>
+      </section>
 
-        <!-- third section here -->
-        <section class="mt-5 pos-relative w-90rem mx-auto">
-            <div class="flex w-100">
-                <div class="flex pr-5 flex-col brand-gap col z-5">
-                    <h1 class="section-heading">
-                        Fine-tuned by agency owners We understand how to get results for
-                        your models
-                    </h1>
-                    <p class="text-para">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
-                        mollis, urna ultrices metus diam volutpat duis senectus fusce
-                        porttitor, odio sed arcu massa fames euismod vehicula aliquam.
-                        Lobortis massa hac inceptos volutpat iaculis porttitor vel potenti
-                        in dictum tempor, eleifend torquent mi ut at curabitur aenean quam
-                        nunc fames.
-                    </p>
-                    <p class="text-para">
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
-                        mollis, urna ultrices metus diam volutpat duis senectus fusce
-                        porttitor, odio sed arcu massa fames euismod vehicula aliquam.
-                    </p>
-                    <a href="#" class="brand-link">Learn More ></a>
-                </div>
-                <div class="flex z-5 col">
-                    <img src="./Sources/Images/section-3-img.png" alt="" style="height: max-content; width: 100%" />
-                </div>
-            </div>
-    <!-- reports-2 section eclipse -->
-    <div class="blur-eclipse-small s3-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small s3-section-pos-2 eclipse-pink"></div>
-        </section>
+      <!-- third section here -->
+      <section class="mt-5 pos-relative w-90rem mx-auto">
+        <div class="flex w-100 ">
+          <div class="flex flex-col brand-gap col z-5">
+            <h1 class="section-heading">
+              Fine-tuned by agency owners We understand how to get results for
+              your models
+            </h1>
+            <p class="text-para pr-5 font-open-sans">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
+              mollis, urna ultrices metus diam volutpat duis senectus fusce
+              porttitor, odio sed arcu massa fames euismod vehicula aliquam.
+              Lobortis massa hac inceptos volutpat iaculis porttitor vel potenti
+              in dictum tempor, eleifend torquent mi ut at curabitur aenean quam
+              nunc fames.
+            </p>
+            <p class="text-para pr-5 font-open-sans">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
+              mollis, urna ultrices metus diam volutpat duis senectus fusce
+              porttitor, odio sed arcu massa fames euismod vehicula aliquam.
+            </p>
+            <a href="#" class="brand-link">Learn More ></a>
+          </div>
+          <div class="flex z-5 col justify-center responsive-mt-5">
+            <img
+              src="./Sources/Images/section-3-img.png"
+              alt=""
+              class="reports-section-img"
+            />
+          </div>
+        </div>
+        <!-- reports-2 section eclipse -->
+        <div class="blur-eclipse-small s3-section-pos-1 eclipse-blue"></div>
+        <div class="blur-eclipse-small s3-section-pos-2 eclipse-pink"></div>
+      </section>
 
-        <!-- how-it-works (steps) section here -->
-        <section class="mx-auto mt-5 w-90rem overflow-visible pos-relative">
-            <div class="flex align-center flex-col">
+      <!-- how-it-works (steps) section here -->
+      <section class="mx-auto mt-5 w-90rem overflow-visible pos-relative">
+        <div class="flex align-center flex-col">
+          <div>
+            <h1 class="section-heading">How it works</h1>
+          </div>
+
+          <div class="flex align-center p-5 w-100prcnt justify-between">
+            <div
+              class="steps-cover brand-gap flex flex-col overflow-visible align-center p-3"
+            >
+              <div class="p-4 rounded-full border blur w-fit z-5">
+                <img src="./Sources/Images/how-it-works-1.png" alt="" />
+                <div class="badge bg-white text-black">1</div>
+              </div>
+              <div class="text-center brand-gap flex flex-col">
+                <h3 class="brand-h5">Type a Prompt</h3>
+                <p class="text-para steps-para font-open-sans">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration some.
+                </p>
+              </div>
+            </div>
+
+            <div class="steps-cover brand-gap flex flex-col align-center p-3">
+              <div class="p-4 rounded-full border blur w-fit z-5">
+                <img src="./Sources/Images/how-it-works-2.png" alt="" />
+                <div class="badge bg-white text-black">2</div>
+              </div>
+              <div class="text-center brand-gap flex flex-col">
+                <h3 class="brand-h5">Generate Twitter</h3>
+                <p class="text-para steps-para font-open-sans">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration some.
+                </p>
+              </div>
+            </div>
+
+            <div class="steps-cover brand-gap flex flex-col align-center p-3">
+              <div class="p-4 rounded-full border blur w-fit z-5">
+                <img src="./Sources/Images/how-it-works-3.png" alt="" />
+                <div class="badge bg-white text-black">3</div>
+              </div>
+
+              
+              <div class="text-center brand-gap flex flex-col">
+                <h3 class="brand-h5">Export or create</h3>
+                <p class="text-para steps-para font-open-sans">
+                  There are many variations of passages of Lorem Ipsum
+                  available, but the majority have suffered alteration some.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- arrows between the steps -->
+          <img src="./Sources/Images/Arrow.png" alt="" class="steps-arrow-1">
+          <img src="./Sources/Images/Arrow.png" alt="" class="steps-arrow-2">
+        </div>
+
+        <!-- steps section eclipse -->
+        <div class="blur-eclipse-small steps-section-pos-1 eclipse-blue"></div>
+        <div class="blur-eclipse-small steps-section-pos-2 eclipse-pink"></div>
+      </section>
+
+      <!-- video tutorial section here -->
+      <section class="w-100 pos-relative mt-5 pos-relative">
+        <div class="w-100">
+          <img src="./Sources/Images/tutorial-img.png" alt="" class="w-100 opacity-04"/>
+          <div class="w-100 h-100 flex justify-center align-center">
+            <div
+              class="w-fit flex flex-col align-center brand-gap tutorial-help"
+            >
+              <span class="brand-h5 w-fit text-white">Watch Tutorial</span>
+              <button
+                class="p-4 rounded-full border-brand bg-transperant btn w-fit z-5"
+              >
+                <img src="./Sources/Images/resume.png" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pricing section -->
+      <section
+        class="mt-5 flex justify-center pos-relative w-90rem mx-auto"
+        id="pricing-section"
+      >
+        <div class="flex justify-center w-100 gap-0">
+          <div class="flex flex-col  p-5 justify-center mr-pricing">
+            <span class="brand-link text-20 text-bold font-outfit">PRICING OPTIONS</span>
+            <span class="section-heading text-bold font-roboto"
+              >Our Twitter <br />Pricing Plans.</span
+            >
+            <span class="text-20 text-600 py-25 font-epilogue"
+              >Save 30% on the yearly Packages</span
+            >
+            <div class="flex brand-gap flex-row">
+              <span class="steps-para font-epilogue">MONTHLY</span>
+              <div class="toggle-switch">
+                <input type="checkbox" id="toggle" class="toggle-checkbox" />
+                <label
+                  for="toggle"
+                  class="toggle-label h-100 w-100 bg-white"
+                ></label>
+              </div>
+              <span class="steps-para font-epilogue">YEARLY</span>
+            </div>
+          </div>
+
+          <!-- pricing 1 -->
+
+          <div class="flex flex-row gap-pricing w-55prcnt">
+          <div class="col bg-pricing h-fit mr-5 z-5 w-50prcnt">
+            <div class="p-4 flex justify-center">
+              <!-- icon -->
+              <img
+                src="./Sources/Images/pricing-1-img.png"
+                alt=""
+                class="pricing-img"
+              />
+            </div>
+            <hr class="w-100 gray-15prcnt" />
+            <div class="flex flex-col align-center p-3">
+              <!-- about pricing -->
+              <span class="brand-h5 pt-30 font-roboto">Agency Plan</span>
+              <span class="section-heading text-bold py-25 font-roboto">100$</span>
+              <span class="text-para py-7 font-outfit">Unlimited accs (pay per acc)</span>
+              <span class="text-para py-7 font-outfit">Unlimited RTs</span>
+              <span class="text-para py-7 font-outfit">1 hour support</span>
+              <span class="text-para py-7 font-outfit">RT group trading network</span>
+              <span class="text-para py-7 font-outfit">Private members group</span>
+              <span class="text-para py-7 font-outfit">1-1 onboarding call</span>
+              <span class="text-para py-7 font-outfit">25x cheaper than VAs</span>
+              <span class="text-para py-7 font-outfit">Cancel anytime</span>
+              <button class="brand-btn-2 btn font-roboto pricing-btn">START FREE 7 DAYS TRIAL</button>
+            </div>
+          </div>
+
+          <!-- pricing 2 -->
+          <div class="col bg-pricing h-fit z-5 w-50prcnt">
+            <div class="p-4 flex justify-center">
+              <!-- icon -->
+              <img
+                src="./Sources/Images/pricing-2-img.png"
+                alt=""
+                class="pricing-img"
+              />
+            </div>
+            <hr class="w-100 gray-15prcnt" />
+            <div class="flex flex-col align-center p-3">
+              <!-- about pricing -->
+              <span class="brand-h5 pt-30 font-roboto">Get DFY Plan</span>
+              <span class="section-heading text-bold py-25 font-roboto">300$</span>
+              <span class="text-para py-7 font-outfit">Unlimited accs (pay per acc)</span>
+              <span class="text-para py-7 font-outfit">Unlimited RTs</span>
+              <span class="text-para py-7 font-outfit">1 hour support</span>
+              <span class="text-para py-7 font-outfit">Unlimited free RT groups</span>
+              <span class="text-para py-7 font-outfit">RT group trading network</span>
+              <span class="text-para py-7 font-outfit">Private members group</span>
+              <span class="text-para py-7 font-outfit">1-1 onboarding call</span>
+              <span class="text-para py-7 font-outfit">25x cheaper than VAs</span>
+              <button class="brand-btn-2 btn font-roboto pricing-btn">SHOW MORE</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- pricing section eclipse -->
+        <div
+          class="blur-eclipse-small pricing-section-pos-1 eclipse-blue"
+        ></div>
+        <div
+          class="blur-eclipse-small pricing-section-pos-2 eclipse-pink"
+        ></div>
+      </section>
+
+      <!-- testimonial section here -->
+      <section class="h-fit mt-5">
+        <div class="w-100">
+          <div class="text-center">
+            <h2 class="hero-title">
+              What Our Customers <br />
+              Say
+            </h2>
+          </div>
+          <div class="mt-5 flex flex-col brand-gap align-center">
+            <div class="flex brand-gap w-fit testimonial-container-1">
+              <div class="p-4 h-fit flex brand-gap flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-1-img.png" alt="" />
+                  <span class="text-20 text-bold">Bill Klauber</span>
+                </div>
                 <div>
-                    <h1 class="section-heading">How it works</h1>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
                 </div>
-
-                <div class="flex align-center p-5 w-80prcnt justify-between">
-                    <div class="steps-cover brand-gap flex flex-col overflow-visible align-center p-3">
-                        <div class="p-4 rounded-full border blur w-fit z-5">
-                            <img src="./Sources/Images/how-it-works-1.png" alt="">
-                            <div class="badge bg-white text-black">1</div>
-                        </div>
-                        <div class="text-center brand-gap flex flex-col">
-                            <h4 class="brand-h5">Type a Prompt</h4>
-                            <p class="text-para steps-para">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration some.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="steps-cover brand-gap flex flex-col align-center p-3">
-                        <div class="p-4 rounded-full border blur w-fit z-5">
-                            <img src="./Sources/Images/how-it-works-2.png" alt="">
-                            <div class="badge bg-white text-black">2</div>
-                        </div>
-                        <div class="text-center brand-gap flex flex-col">
-                            <h4 class="brand-h5">Generate Twitter</h4>
-                            <p class="text-para steps-para">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration some.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="steps-cover brand-gap flex flex-col align-center p-3">
-                        <div class="p-4 rounded-full border blur w-fit z-5">
-                            <img src="./Sources/Images/how-it-works-3.png" alt="">
-                            <div class="badge bg-white text-black">3</div>
-                        </div>
-                        <div class="text-center brand-gap flex flex-col">
-                            <h4 class="brand-h5">Export or create</h4>
-                            <p class="text-para steps-para">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration some.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-1-img.png" alt="" />
+                  <span class="text-20 text-bold">Bill Klauber</span>
                 </div>
-                <!-- line between the steps -->
-                <div class="line w-60rem"></div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-2-img.png" alt="" />
+                  <span class="text-20 text-bold">Allan Sanidad</span>
+                </div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-3-img.png" alt="" />
+                  <span class="text-20 text-bold">Markus</span>
+                </div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
             </div>
-
-    <!-- steps section eclipse -->
-    <div class="blur-eclipse-small steps-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small steps-section-pos-1 eclipse-pink"></div>
-        </section>
-
-        <!-- video tutorial section here -->
-        <section class="w-100 pos-relative mt-5 pos-relative">
-            <div class="w-100">
-                <img src="./Sources/Images/tutorial-img.png" alt="" class="w-100">
-                <div class="overlay w-100 h-100 flex justify-center align-center">
-                    <div class="w-fit flex flex-col align-center brand-gap tutorial-help">
-                        <span class="brand-h5 w-fit">Watch Tutorial</span>
-                        <button class="p-4 rounded-full border bg-transperant btn w-fit z-5">
-                            <img src="./Sources/Images/resume.png" alt="">
-                        </button>
-                    </div>
+            <div
+              class="flex brand-gap w-fit testimonial-container-2 overflow-hide pos-relative"
+            >
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-1-img.png" alt="" />
+                  <span class="text-20 text-bold">Bill Klauber</span>
                 </div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-4-img.png" alt="" />
+                  <span class="text-20 text-bold">Douglas Coffman</span>
+                </div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-5-img.png" alt="" />
+                  <span class="text-20 text-bold">Salahdine Benyoussef</span>
+                </div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
+              <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
+                <div class="flex align-center brand-gap">
+                  <img src="./Sources/Images/testimonial-6-img.png" alt="" />
+                  <span class="text-20 text-bold">Salahdine Benyoussef</span>
+                </div>
+                <div>
+                  <span class="text-20 line-h-40prcnt"
+                    >“Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum.Amet facilisis magna etiam tempor orci eu lobortis
+                    elementum”</span
+                  >
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- pricing section -->
-        <section class="mt-5 flex justify-center pos-relative w-80rem mx-auto" id="pricing-section">
-            <div class="flex justify-center w-100">
-                <div class="flex flex-col col brand-gap p-5 justify-center">
-                    <span class="brand-link text-20">PRICING OPTIONS</span>
-                    <span class="section-heading text-bold">Our Twitter <br>Pricing Plans.</span>
-                    <span class="text-20 text-bold">Save 30% on the yearly Packages</span>
-                    <div class="flex brand-gap">
-                        <span class="steps-para">MONTHLY</span>
-                        <div class="toggle-switch">
-                            <input type="checkbox" id="toggle" class="toggle-checkbox">
-                            <label for="toggle" class="toggle-label h-100 w-100 bg-white"></label>
-                        </div>
-                        <span class="steps-para">YEARLY</span>
-                    </div>
-                </div>
-
-                <!-- pricing 1 -->
-                <div class="col bg-pricing h-fit mr-5 z-5">
-                    <div class="p-4 flex justify-center">
-                        <!-- icon -->
-                        <img src="./Sources/Images/pricing-1-img.png" alt="" class="pricing-img">
-                    </div>
-                    <hr class="w-100 gray-15prcnt">
-                    <div class="flex flex-col align-center p-3 brand-gap">
-                        <!-- about pricing -->
-                        <span class="brand-h5">Agency Plan</span>
-                        <span class="section-heading text-bold">100$</span>
-                        <span class="text-para">Unlimited accs (pay per acc)</span>
-                        <span class="text-para">Unlimited RTs</span>
-                        <span class="text-para">1 hour support</span>
-                        <span class="text-para">RT group trading network</span>
-                        <span class="text-para">Private members group</span>
-                        <span class="text-para">1-1 onboarding call</span>
-                        <span class="text-para">25x cheaper than VAs</span>
-                        <span class="text-para">Cancel anytime</span>
-                        <button class="brand-btn btn">START FREE 7 DAYS TRIAL</button>
-                    </div>
-                </div>
-
-                <!-- pricing 2 -->
-                <div class="col bg-pricing h-fit z-5">
-                    <div class="p-4 flex justify-center">
-                        <!-- icon -->
-                        <img src="./Sources/Images/pricing-2-img.png" alt="" class="pricing-img">
-                    </div>
-                    <hr class="w-100 gray-15prcnt">
-                    <div class="flex flex-col align-center p-3 brand-gap">
-                        <!-- about pricing -->
-                        <span class="brand-h5">Get DFY Plan</span>
-                        <span class="section-heading text-bold">300$</span>
-                        <span class="text-para">Unlimited accs (pay per acc)</span>
-                        <span class="text-para">Unlimited RTs</span>
-                        <span class="text-para">1 hour support</span>
-                        <span class="text-para">Unlimited free RT groups</span>
-                        <span class="text-para">RT group trading network</span>
-                        <span class="text-para">Private members group</span>
-                        <span class="text-para">1-1 onboarding call</span>
-                        <span class="text-para">25x cheaper than VAs</span>
-                        <button class="brand-btn btn">SHOW MORE</button>
-                    </div>
-                </div>
+      <!-- FAQ section -->
+      <section class="w-70rem mx-auto mt-5 h-fit pos-relative" id="faq-section">
+        <div class="text-center w-100 p-5">
+          <span class="section-heading text-bold"
+            >Frequently Asked Questions</span
+          >
+        </div>
+        <div class="flex flex-col brand-gap w-100">
+          <div class="faq-container w-100 flex flex-col brand-gap">
+            <div class="faq-item w-90prcnt mx-auto ">
+              <div class="faq-question p-3 text-24px text-white text-bold">
+                What is the reason for utilizing an AI-powered text-to-image
+                generator?
+                <span class="arrow">
+                  <img src="./Sources/Images/FAQ-drop-img.png" alt="" />
+                </span>
+              </div>
+              <div class="faq-answer p-3">
+                No matter if you're a marketer, designer, or creative
+                individual, you can quickly transform your creative concepts
+                into tangible designs without investing time in designing from
+                the ground up. With AI-generated images from text, you can
+                effortlessly enhance your designs at no cost and in a matter of
+                minutes.
+              </div>
             </div>
-
-    <!-- pricing section eclipse -->
-    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small pricing-section-pos-1 eclipse-pink"></div>
-        </section>
-
-
-        <!-- testimonial section here -->
-        <section class="h-fit mt-5">
-            <div class="w-100">
-                <div class="text-center">
-                    <h1 class="hero-title">What Our Customers <br> Say</h1>
-                </div>
-                <div class="mt-5 flex flex-col brand-gap align-center">
-                    <div class="flex brand-gap w-fit testimonial-container-1">
-                        <div class="p-4 h-fit flex brand-gap flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-1-img.png" alt="">
-                                <span class="text-20 text-bold">Bill Klauber</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-1-img.png" alt="">
-                                <span class="text-20 text-bold">Bill Klauber</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-2-img.png" alt="">
-                                <span class="text-20 text-bold">Allan Sanidad</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-3-img.png" alt="">
-                                <span class="text-20 text-bold">Markus</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex brand-gap w-fit testimonial-container-2 overflow-hide pos-relative">
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-1-img.png" alt="">
-                                <span class="text-20 text-bold">Bill Klauber</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-4-img.png" alt="">
-                                <span class="text-20 text-bold">Douglas Coffman</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-5-img.png" alt="">
-                                <span class="text-20 text-bold">Salahdine Benyoussef</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                        <div class="p-4 h-fit brand-gap flex flex-col testimonial-card">
-                            <div class="flex align-center brand-gap">
-                                <img src="./Sources/Images/testimonial-6-img.png" alt="">
-                                <span class="text-20 text-bold">Salahdine Benyoussef</span>
-                            </div>
-                            <div>
-                                <span class="text-20 line-h-40prcnt">“Amet facilisis magna etiam tempor orci eu lobortis
-                                    elementum.Amet facilisis magna etiam tempor orci eu lobortis elementum.Amet
-                                    facilisis magna etiam tempor orci eu lobortis elementum”</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="faq-item w-90prcnt mx-auto">
+              <div class="faq-question">
+                What is Tweet Riser?
+                <span class="arrow">
+                  <img src="./Sources/Images/FAQ-drop-img.png" alt="" />
+                </span>
+              </div>
+              <div class="faq-answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                quasi sunt laudantium dicta et? Eum, corrupti praesentium!
+                Molestiae iure dolorum totam architecto? Perspiciatis, soluta
+                nam. Quidem molestiae incidunt veritatis eum.
+              </div>
             </div>
-        </section>
-
-        <!-- FAQ section -->
-        <section class="w-70rem mx-auto mt-5 h-fit pos-relative" id="faq-section">
-            <div class="text-center w-100 p-5">
-                <span class="section-heading text-bold">Frequently Asked Questions</span>
+            <div class="faq-item w-90prcnt mx-auto">
+              <div class="faq-question">
+                Will Tweet Riser help me build an audience and grow my account?
+                <span class="arrow">
+                  <img src="./Sources/Images/FAQ-drop-img.png" alt="" />
+                </span>
+              </div>
+              <div class="faq-answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium laudantium error praesentium, fugit id sequi aliquid
+                modi, nobis ducimus voluptatum, asperiores dolores. Eaque fugiat
+                reprehenderit autem voluptas officiis.
+              </div>
             </div>
-            <div class="flex flex-col brand-gap w-100">
-                <div class="faq-container w-100 flex flex-col brand-gap">
-                    <div class="faq-item">
-                        <div class="faq-question p-3 text-24px text-white text-bold">
-                            What is the reason for utilizing an AI-powered text-to-image generator?
-                            <span class="arrow">
-                                <img src="./Sources/Images/FAQ-drop-img.png" alt="">
-                            </span>
-                        </div>
-                        <div class="faq-answer p-3">No matter if you're a marketer, designer, or creative individual, you can quickly transform your creative concepts into tangible designs without investing time in designing from the ground up. With AI-generated images from text, you can effortlessly enhance your designs at no cost and in a matter of minutes.
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            What is Tweet Riser?
-                            <span class="arrow">
-                                <img src="./Sources/Images/FAQ-drop-img.png" alt="">
-                            </span>
-                        </div>
-                        <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quasi sunt laudantium dicta et? Eum, corrupti praesentium! Molestiae iure dolorum totam architecto? Perspiciatis, soluta nam. Quidem molestiae incidunt veritatis eum.
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            Will Tweet Riser help me build an audience and grow my account?
-                            <span class="arrow">
-                                <img src="./Sources/Images/FAQ-drop-img.png" alt="">
-                            </span>
-                        </div>
-                        <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laudantium error praesentium, fugit id sequi aliquid modi, nobis ducimus voluptatum, asperiores dolores. Eaque fugiat reprehenderit autem voluptas officiis.
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            Can I customize the messages sent by Tweet Riser?
-                            <span class="arrow">
-                                <img src="./Sources/Images/FAQ-drop-img.png" alt="">
-                            </span>
-                        </div>
-                        <div class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus minima enim omnis est impedit veniam temporibus eius delectus deserunt ducimus nam quasi quia, ipsum, magni porro quod commodi?
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question">
-                            How do I integrate Tweet Riser with Twitter / X?
-                            <span class="arrow">
-                                <img src="./Sources/Images/FAQ-drop-img.png" alt="">
-                            </span>
-                        </div>
-                        <div class="faq-answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, ea labore similique minus quod molestias dolorem sapiente fugit, inventore necessitatibus aperiam incidunt doloribus accusantium harum sit.
-                        </div>
-                    </div>
-                </div>
+            <div class="faq-item w-90prcnt mx-auto">
+              <div class="faq-question">
+                Can I customize the messages sent by Tweet Riser?
+                <span class="arrow">
+                  <img src="./Sources/Images/FAQ-drop-img.png" alt="" />
+                </span>
+              </div>
+              <div class="faq-answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                accusamus minima enim omnis est impedit veniam temporibus eius
+                delectus deserunt ducimus nam quasi quia, ipsum, magni porro
+                quod commodi?
+              </div>
             </div>
-
-
-    <!-- FAQ section eclipse -->
-    <div class="blur-eclipse-small faq-section-pos-1 eclipse-blue"></div>
-    <div class="blur-eclipse-small faq-section-pos-2 eclipse-pink"></div>
-        </section>
-
-        <!-- join community section here -->
-        <section class="w-100 mt-5">
-            <div class="flex flex-col align-center brand-gap p-5 join-section bg-footer-area">
-                <div class=" flex brand-gap">
-                   <img src="./Sources/Images/celebrate.png" alt="">
-                    <h1 class="section-heading text-bold">Join Our Community</h1>
-                </div>
-                <span class="text-24px" style="color: #86909D;">Lorem ipsum dolor sit amet consectetur adipisicing elit Quis non fugit</span>
-                <button class="brand-btn flex gap-1 flex-row rounded btn">
-                    <span class="text-para text-white">JOIN DISCORD</span>
-                    <img src="./Sources/Images/Discord.png" alt="">
-                </button>
+            <div class="faq-item w-90prcnt mx-auto">
+              <div class="faq-question">
+                How do I integrate Tweet Riser with Twitter / X?
+                <span class="arrow">
+                  <img src="./Sources/Images/FAQ-drop-img.png" alt="" />
+                </span>
+              </div>
+              <div class="faq-answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
+                ea labore similique minus quod molestias dolorem sapiente fugit,
+                inventore necessitatibus aperiam incidunt doloribus accusantium
+                harum sit.
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- footer -->
-        <footer class="w-100 flex flex-col p-5 bg-footer-area border-t">
-            <div class="flex w-80rem mx-auto footer-gap">
-                <!-- 1st footer -->
-                <div class="col flex flex-col brand-gap">
-                    <h1 class="logo-text">Twittery</h1>
-                    <p class="text-para">
-                        There are many variations of passages of Lorem Ipsum available but  majority have suffered 
-alteration in some form by injected.
-                    </p>
-                    <div class="flex align-center gap-1">
-                        <button class="footer-btn btn">
-                            <img src="./Sources/Images/twitter.png" alt="">
-                        </button>
-                        <button class="footer-btn btn">
-                            <img src="./Sources/Images/Vector.png" alt="">
-                        </button>
-                        <button class="footer-btn btn">
-                            <img src="./Sources/Images/Discord-link.png" alt="">
-                        </button>
-                        <button class="footer-btn btn">
-                            <img src="./Sources/Images/tiktok.png" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="col flex footer-gap">
-                    <!-- all links -->
-                     <div class="col flex flex-col brand-gap">
-                        <span class="brand-h5 text-bold">Company</span>
-                        <ul class="flex flex-col gap-2 footer-link">
-                            <li><a href="#" class="text-para link">Jobs</a></li>
-                            <li><a href="#" class="text-para link">Privacy</a></li>
-                            <li><a href="#" class="text-para link">Terms</a></li>
-                            <li><a href="#" class="text-para link">Cookies</a></li>
-                            <li><a href="#" class="text-para link">Contact Support</a></li>
-                        </ul>
-                     </div>
-                     <div class="col flex flex-col brand-gap">
-                        <span class="brand-h5 text-bold">Create</span>
-                        <ul class="flex flex-col gap-2 footer-link">
-                            <li><a href="#" class="text-para link">Social Post</a></li>
-                            <li><a href="#" class="text-para link">Mockup make</a></li>
-                            <li><a href="#" class="text-para link">Animation Gif</a></li>
-                            <li><a href="#" class="text-para link">Photo Lyric</a></li>
-                            <li><a href="#" class="text-para link">Cartoon</a></li>
-                        </ul>
-                     </div>
-                </div>
-                <div class="col flex flex-col brand-gap pos-relative">
-                    <span class="brand-h5 text-bold">Join Newslatter</span>
-                    <p class="text-para">signup for our newsletter to get the latest News in your inbox.</p>
-                    <input type="text" class="p-2 rounded-sm footer-input" placeholder="Email Address">
-                    <button class="btn footer-send-btn">
-                        <img src="./Sources/Images/send.png" alt="">
-                    </button>
-                 </div>
-            </div>
-            <div class="w-80rem mx-auto mt-1 flex footer-2">
-                <!-- 2nd footer here -->
-                <div class="col flex gap-5">
-                    <span class="text-para">
-                        Copyright - All Rights Reserved.
-                    </span>
-                    <div class="flex gap-2">
-                        <a href="#" class="text-para link">Terms</a>
-                        <a href="#" class="text-para link">Privacy</a>
-                    </div>
-                </div>
-                <div class="col justify-end flex">
-                    <span class="text-para">Made with  By Twittery</span>
-                </div>
-            </div>
+        <!-- FAQ section eclipse -->
+        <div class="blur-eclipse-small faq-section-pos-1 eclipse-blue"></div>
+        <div class="blur-eclipse-small faq-section-pos-2 eclipse-pink"></div>
+      </section>
 
-        </footer>
+      <!-- join community section here -->
+      <section class="w-100 mt-5">
+        <div
+          class="flex flex-col align-center brand-gap p-5 join-section bg-footer-area"
+        >
+          <div class="flex brand-gap">
+            <img src="./Sources/Images/celebrate.png" alt="" />
+            <h2 class="section-heading text-bold">Join Our Community</h2>
+          </div>
+          <span class="text-24px" style="color: #86909d"
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit Quis non
+            fugit</span
+          >
+          <button class="brand-btn flex gap-1 flex-row rounded btn">
+            <span class="text-para text-white">JOIN DISCORD</span>
+            <img src="./Sources/Images/Discord.png" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="w-100 flex flex-col p-5 bg-footer-area border-t">
+        <div class="flex w-80rem mx-auto footer-gap">
+          <!-- 1st footer -->
+          <div class="col flex flex-col brand-gap">
+            <h1 class="logo-text">Twittery</h1>
+            <p class="text-para">
+              There are many variations of passages of Lorem Ipsum available but
+              majority have suffered alteration in some form by injected.
+            </p>
+            <div class="flex align-center gap-1">
+              <button class="footer-btn btn">
+                <img src="./Sources/Images/twitter.png" alt="" />
+              </button>
+              <button class="footer-btn btn">
+                <img src="./Sources/Images/Vector.png" alt="" />
+              </button>
+              <button class="footer-btn btn">
+                <img src="./Sources/Images/Discord-link.png" alt="" />
+              </button>
+              <button class="footer-btn btn">
+                <img src="./Sources/Images/tiktok.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="col flex footer-gap">
+            <!-- all links -->
+            <div class="col flex flex-col brand-gap">
+              <span class="brand-h5 text-bold">Company</span>
+              <ul class="flex flex-col gap-2 footer-link">
+                <li><a href="#" class="text-para link">Jobs</a></li>
+                <li><a href="#" class="text-para link">Privacy</a></li>
+                <li><a href="#" class="text-para link">Terms</a></li>
+                <li><a href="#" class="text-para link">Cookies</a></li>
+                <li><a href="#" class="text-para link">Contact Support</a></li>
+              </ul>
+            </div>
+            <div class="col flex flex-col brand-gap">
+              <span class="brand-h5 text-bold">Create</span>
+              <ul class="flex flex-col gap-2 footer-link">
+                <li><a href="#" class="text-para link">Social Post</a></li>
+                <li><a href="#" class="text-para link">Mockup make</a></li>
+                <li><a href="#" class="text-para link">Animation Gif</a></li>
+                <li><a href="#" class="text-para link">Photo Lyric</a></li>
+                <li><a href="#" class="text-para link">Cartoon</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col flex flex-col brand-gap pos-relative">
+            <span class="brand-h5 text-bold">Join Newslatter</span>
+            <p class="text-para">
+              signup for our newsletter to get the latest News in your inbox.
+            </p>
+            <input
+              type="text"
+              class="p-2 rounded-sm footer-input"
+              placeholder="Email Address"
+            />
+            <button class="btn footer-send-btn">
+              <img src="./Sources/Images/send.png" alt="" />
+            </button>
+          </div>
+        </div>
+        <div class="w-80rem mx-auto mt-1 flex footer-2">
+          <!-- 2nd footer here -->
+          <div class="col flex gap-5">
+            <span class="text-para"> Copyright - All Rights Reserved. </span>
+            <div class="flex gap-2">
+              <a href="#" class="text-para link">Terms</a>
+              <a href="#" class="text-para link">Privacy</a>
+            </div>
+          </div>
+          <div class="col justify-end flex">
+            <span class="text-para">Made with By Twittery</span>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./Sources/Scripts/main.js"></script>
-</body>
-
+  </body>
 </html>

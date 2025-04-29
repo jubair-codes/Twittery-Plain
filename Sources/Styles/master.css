@@ -1,19 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
-    overflow: visible;
 }
 
 body {
     position: relative;
+    background: #030014;
 }
 
 html {
     font-family: 'Montserrat';
+}
+
+main {
+    overflow-x: hidden; /* Prevents horizontal scrolling caused by child elements */
+  }
+  
+
+.pricing-btn {
+    width: 90%;
+}
+
+.mr-pricing {
+    padding-right: 100px;
 }
 
 .main-cover {
@@ -58,10 +75,13 @@ html {
 .nav-link {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-link:hover {
     color: #E224DB;
+    cursor: pointer;
 }
 
 .nav-link:active {
@@ -75,16 +95,12 @@ html {
     gap: 14px;
 }
 
-.nav-buttons:hover {
-    color: #E224DB;
+.book-now-btn {
+    padding: 15px 45px;
 }
 
-
-.book-now-btn {
-    font-size: var(--primary-text-size);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 15px 25px;
-    border-radius: 50px;
+.nav-buttons:hover {
+    color: #E224DB;
 }
 
 .hero-section {
@@ -121,8 +137,11 @@ html {
 }
 
 .hero-title {
+    font-weight: 700;
     font-size: 72px;
-    font-weight: 700px;
+    line-height: 90px;
+    letter-spacing: 0%;
+    text-align: center;
     z-index: 5;
 }
 
@@ -130,8 +149,9 @@ html {
     width: 903px;
     height: 903px;
     border-radius: 50%;
+    pointer-events: none;
     opacity: 0.4;
-    z-index: 2;
+    z-index: 0;
     filter: blur(7000px);
 }
 
@@ -139,9 +159,10 @@ html {
     width: 178px;
     height: 178px;
     border-radius: 50%;
+    pointer-events: none;
     opacity: 1;
-    z-index: 2;
-    filter: blur(700px);
+    z-index: 0;
+    filter: blur(400px);
 }
 
 .eclipse-blue {
@@ -176,10 +197,29 @@ html {
     left: -150px;
 }
 
-.how-it-works-img-line {
-    flex-grow: 1;
-    height: 2px;
-    background-color: gray;
+.reports-section-img {
+    width: 567;
+    height: 575;
+    top: 1082px;
+    left: 312px;
+    border-radius: 10px;
+}
+
+.steps-arrow-1 {
+    top: 39%;
+    position: absolute;
+    left: 24%;
+}
+
+.steps-arrow-2 {
+    top: 39%;
+    position: absolute;
+    right: 24%;
+}
+
+.tutorial-help {
+    position: absolute;
+    top: 42%;
 }
 
 .badge {
@@ -225,19 +265,19 @@ html {
     position: absolute;
     top: 160px;
     opacity: 1;
-    right: 0;
+    right: -120px;
 }
 
 .steps-section-pos-2 {
     position: absolute;
-    top: -360px;
+    top: 120px;
     opacity: 1;
-    right: 200px;
+    right: -150px;
 }
 
 .pricing-section-pos-1 {
     position: absolute;
-    bottom: 20%;
+    top: 600px;
     opacity: 1;
     left: 20%;
 }
@@ -246,8 +286,8 @@ html {
     position: absolute;
     background-color: #E224DB;
     top: 500px;
-    opacity: 1.5;
-    left: 30px;
+    opacity: 1;
+    left: 15%;
 }
 
 .toggle-switch {
@@ -270,8 +310,8 @@ html {
 .toggle-label::before {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 3.5px;
+    top: 5px;
+    left: 4px;
     width: 30px;
     height: 30px;
     background-color: #5F1FD2;
@@ -280,7 +320,7 @@ html {
 }
 
 .toggle-checkbox:checked+.toggle-label::before {
-    transform: translateX(42px);
+    transform: translateX(41px);
 }
 
 .pricing-img {
@@ -347,7 +387,7 @@ html {
     display: block;
 }
 
-.faq-item.active .faq-question{
+.faq-item.active .faq-question {
     background: transparent;
 }
 
@@ -414,7 +454,7 @@ html {
 
 .footer-send-btn {
     position: absolute;
-    top: 152px;
+    top: 146px;
     right: 3px;
     border: 0;
     background-color: #EA00F5;
