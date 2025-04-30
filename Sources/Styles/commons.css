@@ -214,6 +214,10 @@ hr {
     cursor: pointer;
 }
 
+.text-align-start {
+    text-align:left;
+}
+
 .pos-relative {
     position: relative;
 }
@@ -469,6 +473,10 @@ hr {
     font-size: 16px;
     line-height: 29px;
     font-weight: 400px;
+}
+
+.text-bold-2 {
+    font-weight: 500;
 }
 
 .z-7 {

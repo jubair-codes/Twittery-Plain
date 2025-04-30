@@ -13,10 +13,13 @@
     <!-- main covers the whole body apearing to be a cover -->
     <main class="main-cover pos-relative">
       <!-- The nav bar here -->
-      <nav class="navbar w-90rem pos-absolute overflow-hide">
+      <nav class="navbar w-90rem pos-absolute overflow-hide pos-relative">
         <div>
-          <a class="logo-text btn" href="#">Twittery</a>
+          <a href="/">
+            <img src="./Sources/Images/logo.png" alt="" />
+          </a>
         </div>
+        <!-- nav links only for desktops and big laptops -->
         <ul class="nav-links z-5 pos-relative overflow-hide">
           <li>
             <a href="#" class="nav-link pos-relative z-7">Home</a>
@@ -37,13 +40,48 @@
         <div class="nav-buttons z-5">
           <a href="#" class="nav-link">Login</a>
           <button href="#" class="nav-link p-05 brand-btn rounded">
-            <div class="h-100 w-100 rounded bg-global book-now-btn">Book now</div>
+            <div class="h-100 w-100 rounded bg-global book-now-btn">
+              Book now
+            </div>
           </button>
+
+          <!-- menu for small laptops and smaller devices -->
+        <button class="menu-btn" id="menu-btn">
+          <img src="./Sources/Images/menu.png" alt="">
+        </button>
         </div>
+        <!-- the menu is here with fixed position -->
+        <menu class="side-menu h-100vh flex flex-col" id="side-menu">
+          <div>
+            <button class="close-btn menu-btn section-heading" id="close-menu-btn">X</button>
+          </div>
+          <div class="flex flex-col gap-2 w-100 text-align-start">
+            <li>
+              <a href="#" class="nav-link pos-relative z-7 section-heading">Home</a>
+            </li>
+            <hr class="menu-line">
+            <li>
+              <a href="#" class="nav-link section-heading">Company</a>
+            </li>
+            <hr class="menu-line">
+            <li>
+              <a href="#pricing-section" class="nav-link section-heading">Pricing</a>
+            </li>
+            <hr class="menu-line">
+            <li>
+              <a href="#faq-section" class="nav-link section-heading">FAQ</a>
+            </li>
+            <hr class="menu-line">
+            <li>
+              <a href="#" class="nav-link section-heading">Contact</a>
+            </li>
+          </div>
+          
+        </menu>
       </nav>
       <!-- hero section -->
       <section class="hero-section gap-1 pos-relative w-90rem mx-auto">
-        <div class="flex notifier align-center flex-row justify-center">
+        <div class="flex notifier align-center flex-row justify-center ">
           <div class="rounded flex align-center notify-badge">New</div>
           <div class="flex gap-1">
             <span class="notifier-text"
@@ -61,9 +99,9 @@
           </h1>
         </div>
         <div class="flex z-5">
-          <span class="text-center brand-text-secondary font-open-sans"
+          <span class="text-center brand-text-secondary font-open-sans hero-description"
             >Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus,
-            pretium feugiat morbi id <br />
+            pretium feugiat morbi id
             nisi ligula urna, condimentum ante mollis interdum vulputate odio
             sodales.</span
           >
@@ -88,7 +126,7 @@
               class="reports-section-img"
             />
           </div>
-          <div class="flex  flex-col brand-gap col">
+          <div class="flex flex-col brand-gap col">
             <h2 class="section-heading">
               Fine-tuned by agency owners We understand how to get results for
               your models
@@ -116,12 +154,19 @@
 
       <!-- third section here -->
       <section class="mt-5 pos-relative w-90rem mx-auto">
-        <div class="flex w-100 ">
+        <div class="flex w-100">
+          <div class="flex z-5 col justify-center responsive-hide-always">
+            <img
+              src="./Sources/Images/section-3-img.png"
+              alt=""
+              class="reports-section-img"
+            />
+          </div>
           <div class="flex flex-col brand-gap col z-5">
-            <h1 class="section-heading">
+            <h2 class="section-heading">
               Fine-tuned by agency owners We understand how to get results for
               your models
-            </h1>
+            </h2>
             <p class="text-para pr-5 font-open-sans">
               Lorem ipsum dolor sit amet consectetur adipiscing elit conubia
               mollis, urna ultrices metus diam volutpat duis senectus fusce
@@ -137,7 +182,7 @@
             </p>
             <a href="#" class="brand-link">Learn More ></a>
           </div>
-          <div class="flex z-5 col justify-center responsive-mt-5">
+          <div class="flex z-5 col justify-center responsive-hide-1200">
             <img
               src="./Sources/Images/section-3-img.png"
               alt=""
@@ -154,7 +199,7 @@
       <section class="mx-auto mt-5 w-90rem overflow-visible pos-relative">
         <div class="flex align-center flex-col">
           <div>
-            <h1 class="section-heading">How it works</h1>
+            <h2 class="section-heading">How it works</h2>
           </div>
 
           <div class="flex align-center p-5 w-100prcnt justify-between">
@@ -194,7 +239,6 @@
                 <div class="badge bg-white text-black">3</div>
               </div>
 
-              
               <div class="text-center brand-gap flex flex-col">
                 <h3 class="brand-h5">Export or create</h3>
                 <p class="text-para steps-para font-open-sans">
@@ -205,8 +249,8 @@
             </div>
           </div>
           <!-- arrows between the steps -->
-          <img src="./Sources/Images/Arrow.png" alt="" class="steps-arrow-1">
-          <img src="./Sources/Images/Arrow.png" alt="" class="steps-arrow-2">
+          <img src="./Sources/Images/Arrow.png" alt="" class="steps-arrow-1" />
+          <img src="./Sources/Images/Arrow.png" alt="" class="steps-arrow-2" />
         </div>
 
         <!-- steps section eclipse -->
@@ -217,7 +261,11 @@
       <!-- video tutorial section here -->
       <section class="w-100 pos-relative mt-5 pos-relative">
         <div class="w-100">
-          <img src="./Sources/Images/tutorial-img.png" alt="" class="w-100 opacity-04"/>
+          <img
+            src="./Sources/Images/tutorial-img.png"
+            alt=""
+            class="w-100 opacity-04"
+          />
           <div class="w-100 h-100 flex justify-center align-center">
             <div
               class="w-fit flex flex-col align-center brand-gap tutorial-help"
@@ -239,12 +287,14 @@
         id="pricing-section"
       >
         <div class="flex justify-center w-100 gap-0">
-          <div class="flex flex-col  p-5 justify-center mr-pricing">
-            <span class="brand-link text-20 text-bold font-outfit">PRICING OPTIONS</span>
-            <span class="section-heading text-bold font-roboto"
+          <div class="flex flex-col p-5 justify-center mr-pricing">
+            <span class="brand-link text-20 text-bold font-outfit"
+              >PRICING OPTIONS</span
+            >
+            <span class="section-heading text-bold font-roboto pricing-heading"
               >Our Twitter <br />Pricing Plans.</span
             >
-            <span class="text-20 text-600 py-25 font-epilogue"
+            <span class="text-20 text-600 py-25 font-epilogue text-bold-2"
               >Save 30% on the yearly Packages</span
             >
             <div class="flex brand-gap flex-row">
@@ -263,59 +313,89 @@
           <!-- pricing 1 -->
 
           <div class="flex flex-row gap-pricing w-55prcnt">
-          <div class="col bg-pricing h-fit mr-5 z-5 w-50prcnt">
-            <div class="p-4 flex justify-center">
-              <!-- icon -->
-              <img
-                src="./Sources/Images/pricing-1-img.png"
-                alt=""
-                class="pricing-img"
-              />
+            <div class="col bg-pricing h-fit mr-5 z-5 w-50prcnt">
+              <div class="p-4 flex justify-center">
+                <!-- icon -->
+                <img
+                  src="./Sources/Images/pricing-1-img.png"
+                  alt=""
+                  class="pricing-img"
+                />
+              </div>
+              <hr class="w-100 gray-15prcnt" />
+              <div class="flex flex-col align-center p-3">
+                <!-- about pricing -->
+                <span class="brand-h5 pt-30 font-roboto">Agency Plan</span>
+                <span class="section-heading text-bold py-25 font-roboto"
+                  >100$</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >Unlimited accs (pay per acc)</span
+                >
+                <span class="text-para py-7 font-outfit">Unlimited RTs</span>
+                <span class="text-para py-7 font-outfit">1 hour support</span>
+                <span class="text-para py-7 font-outfit"
+                  >RT group trading network</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >Private members group</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >1-1 onboarding call</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >25x cheaper than VAs</span
+                >
+                <span class="text-para py-7 font-outfit">Cancel anytime</span>
+                <button class="brand-btn-2 btn font-roboto pricing-btn">
+                  START FREE 7 DAYS TRIAL
+                </button>
+              </div>
             </div>
-            <hr class="w-100 gray-15prcnt" />
-            <div class="flex flex-col align-center p-3">
-              <!-- about pricing -->
-              <span class="brand-h5 pt-30 font-roboto">Agency Plan</span>
-              <span class="section-heading text-bold py-25 font-roboto">100$</span>
-              <span class="text-para py-7 font-outfit">Unlimited accs (pay per acc)</span>
-              <span class="text-para py-7 font-outfit">Unlimited RTs</span>
-              <span class="text-para py-7 font-outfit">1 hour support</span>
-              <span class="text-para py-7 font-outfit">RT group trading network</span>
-              <span class="text-para py-7 font-outfit">Private members group</span>
-              <span class="text-para py-7 font-outfit">1-1 onboarding call</span>
-              <span class="text-para py-7 font-outfit">25x cheaper than VAs</span>
-              <span class="text-para py-7 font-outfit">Cancel anytime</span>
-              <button class="brand-btn-2 btn font-roboto pricing-btn">START FREE 7 DAYS TRIAL</button>
-            </div>
-          </div>
 
-          <!-- pricing 2 -->
-          <div class="col bg-pricing h-fit z-5 w-50prcnt">
-            <div class="p-4 flex justify-center">
-              <!-- icon -->
-              <img
-                src="./Sources/Images/pricing-2-img.png"
-                alt=""
-                class="pricing-img"
-              />
-            </div>
-            <hr class="w-100 gray-15prcnt" />
-            <div class="flex flex-col align-center p-3">
-              <!-- about pricing -->
-              <span class="brand-h5 pt-30 font-roboto">Get DFY Plan</span>
-              <span class="section-heading text-bold py-25 font-roboto">300$</span>
-              <span class="text-para py-7 font-outfit">Unlimited accs (pay per acc)</span>
-              <span class="text-para py-7 font-outfit">Unlimited RTs</span>
-              <span class="text-para py-7 font-outfit">1 hour support</span>
-              <span class="text-para py-7 font-outfit">Unlimited free RT groups</span>
-              <span class="text-para py-7 font-outfit">RT group trading network</span>
-              <span class="text-para py-7 font-outfit">Private members group</span>
-              <span class="text-para py-7 font-outfit">1-1 onboarding call</span>
-              <span class="text-para py-7 font-outfit">25x cheaper than VAs</span>
-              <button class="brand-btn-2 btn font-roboto pricing-btn">SHOW MORE</button>
+            <!-- pricing 2 -->
+            <div class="col bg-pricing h-fit z-5 w-50prcnt">
+              <div class="p-4 flex justify-center">
+                <!-- icon -->
+                <img
+                  src="./Sources/Images/pricing-2-img.png"
+                  alt=""
+                  class="pricing-img"
+                />
+              </div>
+              <hr class="w-100 gray-15prcnt" />
+              <div class="flex flex-col align-center p-3">
+                <!-- about pricing -->
+                <span class="brand-h5 pt-30 font-roboto">Get DFY Plan</span>
+                <span class="section-heading text-bold py-25 font-roboto"
+                  >300$</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >Unlimited accs (pay per acc)</span
+                >
+                <span class="text-para py-7 font-outfit">Unlimited RTs</span>
+                <span class="text-para py-7 font-outfit">1 hour support</span>
+                <span class="text-para py-7 font-outfit"
+                  >Unlimited free RT groups</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >RT group trading network</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >Private members group</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >1-1 onboarding call</span
+                >
+                <span class="text-para py-7 font-outfit"
+                  >25x cheaper than VAs</span
+                >
+                <button class="brand-btn-2 btn font-roboto pricing-btn">
+                  SHOW MORE
+                </button>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
         <!-- pricing section eclipse -->
@@ -329,7 +409,7 @@
 
       <!-- testimonial section here -->
       <section class="h-fit mt-5">
-        <div class="w-100">
+        <div class="w-100 overflow-hide">
           <div class="text-center">
             <h2 class="hero-title">
               What Our Customers <br />
@@ -468,7 +548,7 @@
         </div>
         <div class="flex flex-col brand-gap w-100">
           <div class="faq-container w-100 flex flex-col brand-gap">
-            <div class="faq-item w-90prcnt mx-auto ">
+            <div class="faq-item w-90prcnt mx-auto">
               <div class="faq-question p-3 text-24px text-white text-bold">
                 What is the reason for utilizing an AI-powered text-to-image
                 generator?
@@ -574,7 +654,9 @@
         <div class="flex w-80rem mx-auto footer-gap">
           <!-- 1st footer -->
           <div class="col flex flex-col brand-gap">
-            <h1 class="logo-text">Twittery</h1>
+            <a href="/">
+              <img src="./Sources/Images/logo.png" alt="">
+            </a>
             <p class="text-para font-open-sans">
               There are many variations of passages of Lorem Ipsum available but
               majority have suffered alteration in some form by injected.
@@ -599,26 +681,54 @@
             <div class="col flex flex-col brand-gap">
               <span class="brand-h5 text-bold font-open-sans">Company</span>
               <ul class="flex flex-col gap-2 footer-link">
-                <li><a href="#" class="text-para link font-open-sans">Jobs</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Privacy</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Terms</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Cookies</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Contact Support</a></li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans">Jobs</a>
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans">Privacy</a>
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans">Terms</a>
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans">Cookies</a>
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans"
+                    >Contact Support</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="col flex flex-col brand-gap">
               <span class="brand-h5 text-bold font-open-sans">Create</span>
               <ul class="flex flex-col gap-2 footer-link">
                 <li><a href="#" class="text-para link">Social Post</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Mockup make</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Animation Gif</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Photo Lyric</a></li>
-                <li><a href="#" class="text-para link font-open-sans">Cartoon</a></li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans"
+                    >Mockup make</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans"
+                    >Animation Gif</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans"
+                    >Photo Lyric</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-para link font-open-sans">Cartoon</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="col flex flex-col brand-gap pos-relative">
-            <span class="brand-h5 text-bold font-open-sans">Join Newslatter</span>
+            <span class="brand-h5 text-bold font-open-sans"
+              >Join Newslatter</span
+            >
             <p class="text-para font-open-sans">
               signup for our newsletter to get the latest News in your inbox.
             </p>
@@ -635,7 +745,9 @@
         <div class="w-80rem mx-auto mt-1 flex footer-2">
           <!-- 2nd footer here -->
           <div class="col flex gap-5">
-            <span class="text-para font-open-sans"> Copyright - All Rights Reserved. </span>
+            <span class="text-para font-open-sans">
+              Copyright - All Rights Reserved.
+            </span>
             <div class="flex gap-2">
               <a href="#" class="text-para link font-open-sans">Terms</a>
               <a href="#" class="text-para link font-open-sans">Privacy</a>
