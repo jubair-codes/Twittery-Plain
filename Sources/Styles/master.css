@@ -494,8 +494,8 @@ img {
 
 .footer-send-btn {
     position: absolute;
-    top: 146px;
-    right: 3px;
+    top: 3px;
+    right: 0px;
     border: 0;
     background-color: #EA00F5;
     width: 72px;
