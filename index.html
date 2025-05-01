@@ -20,7 +20,7 @@
           </a>
         </div>
         <!-- nav links only for desktops and big laptops -->
-        <ul class="nav-links z-5 pos-relative overflow-hide">
+        <ul class="nav-links nav-link-res z-5 pos-relative overflow-hide">
           <li>
             <a href="#" class="nav-link pos-relative z-7">Home</a>
           </li>
@@ -37,19 +37,20 @@
             <a href="#" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="nav-buttons z-5">
+        <div class="nav-buttons z-5 nav-link-res">
           <a href="#" class="nav-link">Login</a>
           <button href="#" class="nav-link p-05 brand-btn rounded">
             <div class="h-100 w-100 rounded bg-global book-now-btn">
               Book now
             </div>
           </button>
+        
+        </div>
 
           <!-- menu for small laptops and smaller devices -->
         <button class="menu-btn" id="menu-btn">
           <img src="./Sources/Images/menu.png" alt="">
         </button>
-        </div>
         <!-- the menu is here with fixed position -->
         <menu class="side-menu h-100vh flex flex-col" id="side-menu">
           <div>
@@ -75,6 +76,15 @@
             <li>
               <a href="#" class="nav-link section-heading">Contact</a>
             </li>
+            <hr class="menu-line">
+            <div class="nav-buttons z-5 flex flex-col section-heading">
+              <a href="#" class="nav-link">Login</a>
+              <button href="#" class="nav-link p-05 brand-btn rounded">
+                <div class="h-100 w-100 rounded bg-global book-now-btn">
+                  Book now
+                </div>
+              </button>
+            </div>
           </div>
           
         </menu>
@@ -93,12 +103,12 @@
         <div class="flex flex-col align-center">
           <h1 class="hero-title">
             Maximum
-            <img src="./Sources/Images/x.png" alt="" class="" />
+            <img src="./Sources/Images/x.png" alt="" class="x-icon" />
             Traffic, Earn <br />
             Maximum Cashflow.
           </h1>
         </div>
-        <div class="flex z-5">
+        <div class="flex z-5 hero-text">
           <span class="text-center brand-text-secondary font-open-sans hero-description"
             >Lorem ipsum dolor sit amet consectetur adipiscing elit faucibus,
             pretium feugiat morbi id
@@ -308,7 +318,7 @@
 
           <!-- pricing 1 -->
 
-          <div class="flex flex-row gap-pricing w-55prcnt">
+          <div class="flex flex-row gap-pricing w-55prcnt pricing-container">
             <div class="col bg-pricing h-fit mr-5 z-5 w-50prcnt">
               <div class="p-4 flex justify-center">
                 <!-- icon -->
@@ -649,15 +659,16 @@
       <footer class="w-100 flex flex-col p-5 bg-footer-area border-t">
         <div class="flex w-80rem mx-auto footer-gap">
           <!-- 1st footer -->
+          
           <div class="col flex flex-col brand-gap">
             <a href="/">
               <img src="./Sources/Images/logo.png" alt="">
             </a>
-            <p class="text-para font-open-sans">
+            <p class="text-para font-open-sans footer-text">
               There are many variations of passages of Lorem Ipsum available but
               majority have suffered alteration in some form by injected.
             </p>
-            <div class="flex align-center gap-1">
+            <div class="flex align-center gap-1 flex-row">
               <button class="footer-btn btn">
                 <img src="./Sources/Images/twitter.png" alt="" />
               </button>
@@ -672,7 +683,7 @@
               </button>
             </div>
           </div>
-          <div class="col flex footer-gap">
+          <div class="col flex footer-gap flex-row">
             <!-- all links -->
             <div class="col flex flex-col brand-gap">
               <span class="brand-h5 text-bold font-open-sans">Company</span>
@@ -690,7 +701,7 @@
                   <a href="#" class="text-para link font-open-sans">Cookies</a>
                 </li>
                 <li>
-                  <a href="#" class="text-para link font-open-sans"
+                  <a href="#" class="text-para link font-open-sans responsive-margin-right"
                     >Contact Support</a
                   >
                 </li>
@@ -740,11 +751,11 @@
         </div>
         <div class="w-80rem mx-auto mt-1 flex footer-2">
           <!-- 2nd footer here -->
-          <div class="col flex gap-5">
+          <div class="col flex gap-5 flex-row">
             <span class="text-para font-open-sans">
               Copyright - All Rights Reserved.
             </span>
-            <div class="flex gap-2">
+            <div class="flex gap-2 flex-row">
               <a href="#" class="text-para link font-open-sans">Terms</a>
               <a href="#" class="text-para link font-open-sans">Privacy</a>
             </div>

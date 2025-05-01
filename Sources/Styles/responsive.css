@@ -36,9 +36,10 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .nav-links {
+  .nav-link-res {
     display: none;
   }
+
   .menu-btn {
     display: block;
   }
@@ -80,6 +81,10 @@
     display: none;
   }
 
+  .footer-text {
+    text-align: center;
+  }
+
   .mr-5 {
     margin-right: 0;
   }
@@ -113,6 +118,10 @@
 
   .w-70rem {
     width: 40rem;
+  }
+  
+  .tutorial-help {
+    transform: translateY(-20%);
   }
 
   .w-90rem {
@@ -149,6 +158,10 @@
     gap: 30px;
   }
 
+  .x-icon {
+    height: 30px;
+  }
+
   .responsive-mt-5 {
     margin-top: 50px;
   }
@@ -159,5 +172,48 @@
 
   .testimonial-container-2 {
     flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar {
+    width: 90%;
+  }
+  .w-80rem {
+    width: 30rem;
+  }
+
+  .pricing-container {
+    flex-direction: column!important;
+    width: 90%;
+  }
+
+  .w-50prcnt {
+    width: 100%;
+  }
+
+  .testimonial-container-1 {
+    transform: scale(0.5);
+  }
+
+  .testimonial-container-2 {
+    transform: scale(0.5);
+    margin-top: -170px;
+  }
+
+  .w-90rem {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar {
+      width: 100%;
+  }
+  .hero-title {
+      font-size: 24px;
+  }
+  .section-heading {
+      font-size: 18px;
   }
 }

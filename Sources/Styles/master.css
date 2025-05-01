@@ -102,6 +102,11 @@ main {
     color: #E224DB;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .hero-section {
     display: flex;
     gap: 20px;
