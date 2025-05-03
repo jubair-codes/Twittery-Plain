@@ -179,7 +179,24 @@
   .navbar {
     width: 90%;
   }
+
+  .bg-footer-area {
+    padding-top: 30px!important;
+  }
+
+  .text-20 {
+    font-size: 14px!important;
+  }
+
   .w-80rem {
+    width: 30rem;
+  }
+
+  .w-90rem {
+    width: 30rem;
+  }
+
+  .w-70rem {
     width: 30rem;
   }
 
@@ -192,8 +209,32 @@
     width: 100%;
   }
 
+  .p-5 {
+    padding: 0;
+  }
+
+  .mt-5 {
+    margin-top: 50px;
+  }
+
   .testimonial-container-1 {
     transform: scale(0.5);
+  }
+
+  .hero-title {
+    line-height: normal;
+  }
+
+  .tutorial-help span {
+    font-size: 20px!important;
+  }
+
+  .tutorial-help button {
+    padding: 20px!important;
+  }
+
+  .brand-text-secondary {
+    line-height: normal;
   }
 
   .testimonial-container-2 {
@@ -206,14 +247,53 @@
   }
 }
 
-@media screen and (max-width: 375px) {
-  .navbar {
-      width: 100%;
+@media screen and (max-width: 500px) {
+  .w-80rem {
+    width: 25rem;
   }
+
+  .w-70rem {
+    width: 25rem;
+  }
+
+  .w-90rem {
+    width: 25rem;
+  }
+
+  .tutorial-help {
+    top: 30%;
+  }
+
+  .mt-5 {
+    margin-top: 30px;
+  }
+
+  .p-4 {
+    padding: 1rem!important;
+  }
+
+  .p-3 {
+    padding: 10px!important;
+  }
+
+  .faq-question {
+    font-size: 20px;
+  }
+
+  .text-24px {
+    font-size: 18px;
+  }
+
   .hero-title {
-      font-size: 24px;
+    font-size: 30px;
   }
+
   .section-heading {
-      font-size: 18px;
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  .brand-text-secondary {
+    font-size: 14px;
   }
 }
